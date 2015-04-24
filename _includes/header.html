@@ -1,13 +1,21 @@
+{% assign pagessort = site.pages | sort: 'n' %}
 <header>
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="{{ site.baseurl }}/" class="brand-logo">{{ site.title }}</a>
+        <a href="{{ site.baseurl }}/" class="brand-logo">&nbsp;&nbsp; Lab & web</a>
         <ul class="right hide-on-med-and-down">
-          {% for page in site.pages %}
-          {% if page.title %}
-          <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% endif %}
+          {% for page in pagessort%}
+            {% if page.title %}
+              <!--
+              <li>
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+                  {{ page.title }}
+                  {{ page.test }}
+                </a>
+              </li>
+              -->
+            {% endif %}
           {% endfor %}
         </ul>
       </div>

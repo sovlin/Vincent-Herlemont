@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 // Mixins
 @import "components/prefixer";
@@ -40,3 +42,13 @@
 @import "components/date_picker/default.scss";
 @import "components/date_picker/default.date.scss";
 @import "components/date_picker/default.time.scss";
+
+.card {
+  @extend .card;
+  .card-action{
+    border-top: none;
+    a{
+      color: white;
+    }
+  }
+}

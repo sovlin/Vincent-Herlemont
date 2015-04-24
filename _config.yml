@@ -2,7 +2,7 @@
 title: Vincent Herlemont
 email: vincentherl@live.fr
 description: > # this means to ignore newlines until "baseurl:"
-  This is my CV, and my amzing life on earth !
+  This is my CV, and my amazing life on earth !
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://vincent-herlemont.github.io" # the base hostname & protocol for your site
 # twitter_username:
@@ -13,3 +13,8 @@ markdown: kramdown
 collections:
  projects:
   output: true
+  title: Projects
+ professional_experience:
+  output: true
+  title: Professional experience
+
