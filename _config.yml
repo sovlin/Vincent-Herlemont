@@ -17,4 +17,7 @@ collections:
  professional_experience:
   output: true
   title: Professional experience
+ technology_watch:
+  output: true
+  title: Technology watch
 
