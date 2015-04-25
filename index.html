@@ -13,21 +13,22 @@ layout: default
         </div>
         <div class="col s12 m6 l6">
             <p class="shades-text">
-                Born at Annecy and raised at south on the France.
-                I've make my degrees math and computer science the University of Grenoble.
+                Born at Annecy and raised in the south of France.
+                I've make my degrees in math and computer science at the University of Grenoble.
             </p>
 
             <p>
                 I love learning, see a good movie, making piano, fly in paragliding
-                and sometime tinker a friendly web application.
+                and sometime tinker a friendly web application and mobile.
             </p>
-            <p>
-                I enjoy developing a create great application, and am passionate about
-                technology watch in the web. How making a more stable application ?
-                How make a better more simply ? I test lot off new technology for
-                have best vision.
 
+            <p>
+                I enjoy developing and create applications, and am passionate about
+                technology watch. How making a more stable application ?
+                How make a better more simply ? I test new technologies each month since six years for
+                have better vision.
             </p>
+
             <p>
                 A other point, I'm interesting about the role technology who can
                 spread knowledge which contribute to social change.
@@ -40,6 +41,7 @@ layout: default
         The best way to reach me is by email
         <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </p>
+
     <p>
         <a class="btn red" href="#!">Download CV</a>
     </p>
@@ -47,22 +49,26 @@ layout: default
 <div class="row">
     <div class="col s12 m12 l2"><p class="right-align"></p></div>
     <div class="col s12 m12 l8">
-        {% for collection in site.collections %}
+        {% for page in site.pages %}
+        {% if page.title && page.imgfront %}
         <div class="col s12 m6 l6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/collections/{{collection[1].label}}.png">
+                    <img class="activator" src="img/pages/{{page.imgfront}}">
                 </div>
                 <div class="card-action">
-                    <a href="#!" class="btn waves-effect waves-light light-blue">Open</a>
+                    <a href="{{ page.permalink | site.baseurl }}"
+                       class="btn waves-effect waves-light light-blue">Open</a>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">{{ collection[1].title | capitalize }} <i class="mdi-navigation-close right"></i></span>
-                    <p>{{ collection[1] | capitalize }}</p>
+                    <span class="card-title grey-text text-darken-4">{{ page.title | capitalize }} <i
+                            class="mdi-navigation-close right"></i></span>
+                    <p>{{ page | capitalize }}</p>
                 </div>
             </div>
         </div>
-        {%endfor%}
+        {% endif %}
+        {% endfor %}
     </div>
     <div class="col s12 m12 l2"><p></p></div>
 </div>

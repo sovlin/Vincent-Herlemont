@@ -6,8 +6,8 @@
 </description>
     <link>http://vincent-herlemont.github.io/</link>
     <atom:link href="http://vincent-herlemont.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Apr 2015 10:02:11 +0200</pubDate>
-    <lastBuildDate>Sat, 25 Apr 2015 10:02:11 +0200</lastBuildDate>
+    <pubDate>Sat, 25 Apr 2015 20:28:44 +0200</pubDate>
+    <lastBuildDate>Sat, 25 Apr 2015 20:28:44 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -35,6 +35,86 @@
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Imagina international (l&#39;alternance)</title>
+        <description>&lt;p&gt;Une année d’alternance en entreprise&lt;/p&gt;
+</description>
+        <pubDate>Sun, 01 Sep 2013 02:00:00 +0200</pubDate>
+        <link>http://vincent-herlemont.github.io/professional_experience/alternance/2013/09/01/imagina-international-alternance.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/professional_experience/alternance/2013/09/01/imagina-international-alternance.html</guid>
+        
+        
+        <category>professional_experience</category>
+        
+        <category>alternance</category>
+        
+      </item>
+    
+      <item>
+        <title>Imagina international (le stage)</title>
+        <description>&lt;p&gt;Site web : http://www.imagina-international.com/
+Entreprise spécialisée dans l’édition d’un ERP (ATEN).&lt;/p&gt;
+
+&lt;p&gt;1)Analyse performance
+Problématique&lt;/p&gt;
+
+&lt;p&gt;Tracer l’utilisation mémoire, tracer l’utilisation CPU. Temps d’exécution des méthodes. Compter le nombre d’invocations par méthode ainsi que leur temps d’exécution. 
+Définir des cas d’utilisation pour les développeurs.
+Définir les bonnes façons de coder / exemple : optimisation de code, comprendre les allocations mémoire  etc …
+Outils testés et documentés : Jmeter, Visual VM+Jconsole, Jprofiler, Yourkit.&lt;/p&gt;
+
+&lt;p&gt;Mise en production : Yourkit.&lt;/p&gt;
+
+&lt;p&gt;3)Plateforme de test
+  Problématique Test Fonctionnel&lt;/p&gt;
+
+&lt;p&gt;Pouvoir créer des scénarios rapidement ; si assistés, c’est un plus. Les scénarios doivent se diviser en blocs d’actions et ainsi permettre de reconstituer de nouveaux scénarios grâce à ces blocs. 
+  Exemple de bloc :  Connexion, Créer une fiche client, Rechercher une fiche client etc … 
+  La solution doit également proposer un rapport détaillé de fin de test.&lt;/p&gt;
+
+&lt;p&gt;Problématique Test Performance&lt;/p&gt;
+
+&lt;p&gt;La solution de test choisie doit pouvoir déclencher en parallèle le même scénario avec des jeux de données différents (ou non). 
+  Possibilité de décaler le lancement des scénarios permettant de simuler des cas d’utilisation réelle. Mesure globale des actions.&lt;/p&gt;
+
+&lt;p&gt;Outils testés et documentés ( R&amp;amp;D ) :  soapUI, Casperjs ,Sahi.&lt;/p&gt;
+
+&lt;p&gt;Outil de mise en production : Sahi&lt;/p&gt;
+
+&lt;p&gt;2)Outil de déploiement&lt;/p&gt;
+
+&lt;p&gt;Cet outil a été créé entièrement en nodeJS avec le soutien des librairies expressjs et socket.io.
+L’interface utilisateur a été créée en utilisant la librairie angularjs. Le design a bénéficié de l’aide de la librairie pure css.&lt;/p&gt;
+
+&lt;p&gt;Fonctionnalités :
+Affichage de l’état (allumé / éteint) des instances
+Affichage de l’état (allumé / éteint) des serveurs
+Mise à jour de déploiement de l’instance
+Affichage en temps réel des traces de debug données par les taches ant
+Verrouillage d’une instance
+Possibilité d’indiquer le nom de la personne travaillant sur l’instance
+L’utilisateur peut indiquer le temps durant lequel l’instance est verrouillée.
+Ce temps décrémentera jusqu’à déverrouillage de l’instance.
+  Téléchargement de l’instance compilée.
+  Accès interne / externe de l’instance.
+  Upload fichier HTML5
+  Consultation des fichiers
+  Téléchargement des fichiers
+  Suppression des fichiers&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/pages/professional_experience/outil_deploiment.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 May 2013 02:00:00 +0200</pubDate>
+        <link>http://vincent-herlemont.github.io/professional_experience/stage/2013/05/20/imagina-international-stage.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/professional_experience/stage/2013/05/20/imagina-international-stage.html</guid>
+        
+        
+        <category>professional_experience</category>
+        
+        <category>stage</category>
         
       </item>
     

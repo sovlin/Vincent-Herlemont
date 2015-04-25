@@ -1,0 +1,18 @@
+---
+layout: page
+title: Professional experience
+permalink: /professional_experience/
+imgfront: professional_experience.png
+n: 1
+---
+{% assign mycategory = site.categories.professional_experience %}
+<div class="container">
+{% for post in mycategory %}
+    <div><a href="{{post.url | site.baseurl}}">{{ post.title }}</a></div>
+    <div>
+        <p>
+            {{ post.excerpt }}
+        </p>
+    </div>
+{% endfor %}
+</div>

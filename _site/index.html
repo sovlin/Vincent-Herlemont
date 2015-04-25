@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+  <link rel="alternate" hreflang="fr" />
   <title>Vincent Herlemont</title>
   <meta name="description" content="This is my CV, and my amazing life on earth !
 ">
@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <link type="text/css" rel="stylesheet" href="/css/add.css"  media="screen,projection"/>
 </head>
+
 
   <body>
 
@@ -35,8 +36,8 @@
             
               <!--
               <li>
-                <a class="page-link" href="/blog/">
-                  Blog
+                <a class="page-link" href="/professional_experience/">
+                  Professional experience
                   
                 </a>
               </li>
@@ -46,8 +47,19 @@
             
               <!--
               <li>
-                <a class="page-link" href="/about/">
-                  About
+                <a class="page-link" href="/projects/">
+                  Projects
+                  
+                </a>
+              </li>
+              -->
+            
+          
+            
+              <!--
+              <li>
+                <a class="page-link" href="/technology_watch/">
+                  Technology watch
                   
                 </a>
               </li>
@@ -75,21 +87,22 @@
         </div>
         <div class="col s12 m6 l6">
             <p class="shades-text">
-                Born at Annecy and raised at south on the France.
-                I've make my degrees math and computer science the University of Grenoble.
+                Born at Annecy and raised in the south of France.
+                I've make my degrees in math and computer science at the University of Grenoble.
             </p>
 
             <p>
                 I love learning, see a good movie, making piano, fly in paragliding
-                and sometime tinker a friendly web application.
+                and sometime tinker a friendly web application and mobile.
             </p>
-            <p>
-                I enjoy developing a create great application, and am passionate about
-                technology watch in the web. How making a more stable application ?
-                How make a better more simply ? I test lot off new technology for
-                have best vision.
 
+            <p>
+                I enjoy developing and create applications, and am passionate about
+                technology watch. How making a more stable application ?
+                How make a better more simply ? I test new technologies each month since six years for
+                have better vision.
             </p>
+
             <p>
                 A other point, I'm interesting about the role technology who can
                 spread knowledge which contribute to social change.
@@ -102,6 +115,7 @@
         The best way to reach me is by email
         <a href="mailto:vincentherl@live.fr">vincentherl@live.fr</a>
     </p>
+
     <p>
         <a class="btn red" href="#!">Download CV</a>
     </p>
@@ -110,50 +124,68 @@
     <div class="col s12 m12 l2"><p class="right-align"></p></div>
     <div class="col s12 m12 l8">
         
-        <div class="col s12 m6 l6">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/collections/projects.png">
-                </div>
-                <div class="card-action">
-                    <a href="#!" class="btn waves-effect waves-light light-blue">Open</a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Projects <i class="mdi-navigation-close right"></i></span>
-                    <p>{"output"=>true, "title"=>"projects", "label"=>"projects", "docs"=>[#<jekyll::document _projects/index.html collection=projects>], "files"=>[], "directory"=>"/users/sovlin/ideaprojects/vincent-herlemont/_projects", "relative_directory"=>"_projects"}</p>
-                </div>
-            </div>
-        </div>
+        
+        
+        
+        
+        
+        
         
         <div class="col s12 m6 l6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/collections/professional_experience.png">
+                    <img class="activator" src="img/pages/professional_experience.png">
                 </div>
                 <div class="card-action">
-                    <a href="#!" class="btn waves-effect waves-light light-blue">Open</a>
+                    <a href="/professional_experience/"
+                       class="btn waves-effect waves-light light-blue">Open</a>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Professional experience <i class="mdi-navigation-close right"></i></span>
-                    <p>{"output"=>true, "title"=>"professional experience", "label"=>"professional_experience", "docs"=>[#<jekyll::document _professional_experience/index.html collection=professional_experience>], "files"=>[], "directory"=>"/users/sovlin/ideaprojects/vincent-herlemont/_professional_experience", "relative_directory"=>"_professional_experience"}</p>
+                    <span class="card-title grey-text text-darken-4">Professional experience <i
+                            class="mdi-navigation-close right"></i></span>
+                    <p>{"layout"=>"page", "title"=>"professional experience", "permalink"=>"/professional_experience/", "imgfront"=>"professional_experience.png", "n"=>1, "content"=>"{% assign mycategory = site.categories.professional_experience %}\n<div class=\"container\">\n{% for post in mycategory %}\n    <div><a href=\"{{post.url | site.baseurl}}\">{{ post.title }}</a></div>\n    <div>\n        <p>\n            {{ post.excerpt }}\n        </p>\n    </div>\n{% endfor %}\n</div>", "dir"=>"/professional_experience/", "name"=>"professional_experience.html", "path"=>"professional_experience.html", "url"=>"/professional_experience/"}</p>
                 </div>
             </div>
         </div>
         
+        
+        
         <div class="col s12 m6 l6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/collections/technology_watch.png">
+                    <img class="activator" src="img/pages/projects.png">
                 </div>
                 <div class="card-action">
-                    <a href="#!" class="btn waves-effect waves-light light-blue">Open</a>
+                    <a href="/projects/"
+                       class="btn waves-effect waves-light light-blue">Open</a>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Technology watch <i class="mdi-navigation-close right"></i></span>
-                    <p>{"output"=>true, "title"=>"technology watch", "label"=>"technology_watch", "docs"=>[], "files"=>[], "directory"=>"/users/sovlin/ideaprojects/vincent-herlemont/_technology_watch", "relative_directory"=>"_technology_watch"}</p>
+                    <span class="card-title grey-text text-darken-4">Projects <i
+                            class="mdi-navigation-close right"></i></span>
+                    <p>{"layout"=>"page", "title"=>"projects", "permalink"=>"/projects/", "imgfront"=>"projects.png", "n"=>1, "content"=>"", "dir"=>"/projects/", "name"=>"projects.html", "path"=>"projects.html", "url"=>"/projects/"}</p>
                 </div>
             </div>
         </div>
+        
+        
+        
+        <div class="col s12 m6 l6">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/pages/technology_watch.png">
+                </div>
+                <div class="card-action">
+                    <a href="/technology_watch/"
+                       class="btn waves-effect waves-light light-blue">Open</a>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Technology watch <i
+                            class="mdi-navigation-close right"></i></span>
+                    <p>{"layout"=>"page", "title"=>"technology watch", "permalink"=>"/technology_watch/", "imgfront"=>"technology_watch.png", "n"=>1, "content"=>"", "dir"=>"/technology_watch/", "name"=>"technology_watch.html", "path"=>"technology_watch.html", "url"=>"/technology_watch/"}</p>
+                </div>
+            </div>
+        </div>
+        
         
     </div>
     <div class="col s12 m12 l2"><p></p></div>
