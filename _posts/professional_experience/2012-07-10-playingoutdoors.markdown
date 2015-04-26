@@ -7,7 +7,7 @@ categories: professional_experience voluntary
 role: "Moniteur/Helper"
 ---
 
-Playingoutdoors
+Playingoutdoors,
 Placé(Localisé) dans un village petit, rural au bord du Bain, Swainswick des Explorateurs(Sondes) fournit aux enfants le jeu(la pièce) extérieur aventureux et stimulant et des expériences à portée pédagogique.
 
 En bref, qui continue aux Explorateurs(Sondes) Swainswick ?

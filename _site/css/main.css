@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
@@ -8021,3 +8022,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media only screen and (max-width: 992px) {
   .toshift {
     padding-left: 0; } }
+#slide-out li {
+  list-style-type: none; }
+#slide-out li:before {
+  content: none;
+  /* on affiche une chaîne de caractère */ }
+
+.excerpt {
+  padding: 15px; }
+
+.article li {
+  list-style-type: none; }
+.article li:before {
+  content: "- ";
+  /* on affiche une chaîne de caractère */ }
+.article h3 {
+  font-weight: 400;
+  font-size: xx-large;
+  color: #01579b; }

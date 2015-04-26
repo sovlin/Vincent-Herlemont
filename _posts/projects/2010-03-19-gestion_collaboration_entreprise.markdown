@@ -38,7 +38,8 @@ Pour une entreprise, créer une cohésion entre les collaborateurs, les services
 Nous nous sommes donc intéressés à cette problématique et avons essayé de résoudre celle-ci par l'intermédiaire d'une application de type « réseau communautaire » destinée au monde professionnel (TPE/PME).
 
 <div id="ergonomie_et_arborescences"></div>
-> Ergonomie & Arborescences
+
+### Ergonomie & Arborescences
 
 L'interface :
 
@@ -52,7 +53,8 @@ Gestion arborescences :
 Popu (html/javascript) qui permet l’authentification de connections.
 
 <div id="page_daccueil_et_connection"></div>
-> Page d'accueil & Connection
+
+### Page d'accueil & Connection
 
 Message page d'accueil où l'utilisateur, dans notre cas anonyme, n'est pas connecté, n'est pas autorisé à visualiser la page.
 ![gestion_collaboration_entreprise_PA-1]({{ site.baseurl }}/img/pages/projects/gestion_collaboration_entreprise_PA-1.jpg)
@@ -67,27 +69,33 @@ Voici l'interface de l'utilisateur une fois connecté.
 ![gestion_collaboration_entreprise_PA-4]({{ site.baseurl }}/img/pages/projects/gestion_collaboration_entreprise_PA-4.jpg)
 
 <div id="gestion_des_utilisateurs"></div>
-> Gestion des utilisateurs
+
+### Gestion des utilisateurs
 
 ( on utilise ici la gestion des plugins )
 Ces plugins on été développés par Vincent Cartier mon binôme de projet.
 
 
 Plugin : Formulaire d'ajout de collaborateurs.
+
 ![gestion_collaboration_entreprise_FGGU-1]({{ site.baseurl }}/img/pages/projects/gestion_collaboration_entreprise_FGGU-1.jpg)
 
 
 Plugin : Listage des utilisateurs
+
 ![gestion_collaboration_entreprise_FGGU-2]({{ site.baseurl }}/img/pages/projects/gestion_collaboration_entreprise_FGGU-2.jpg)
 
 Plugin : Gestion des services
+
 ![gestion_collaboration_entreprise_FGGU-3]({{ site.baseurl }}/img/pages/projects/gestion_collaboration_entreprise_FGGU-3.jpg)
 
 Plugin : gestion des groupes
+
 ![gestion_collaboration_entreprise_FGGU-4]({{ site.baseurl }}/img/pages/projects/gestion_collaboration_entreprise_FGGU-4.jpg)
 
 <div id="administration_de_la_plate-forme"></div>
-> Administration de la plate-forme
+
+### Administration de la plate-forme
 
 Cette partie permet de gérer l'arborescence du site en fonction des droits de l'utilisateur.
 
@@ -96,20 +104,20 @@ Voici l'ajout d'une page à celle courante :
 
 
 <div id="gestion_des_droits"></div>
-> Gestion des droits
+
+### Gestion des droits
 
 La gestion des droits par groupe d'utilisateurs de n'importe quels plugin ou page à été très difficile à réaliser.
 
 Voici la gestion des droits sur une page :
 ![gestion_collaboration_entreprise_GD-1]({{ site.baseurl }}/img/pages/projects/gestion_collaboration_entreprise_GD-1.png)
 
-
-
 Explication des gestions d’exception des droits :
 ![gestion_collaboration_entreprise_GD-2]({{ site.baseurl }}/img/pages/projects/gestion_collaboration_entreprise_GD-2.png)
 
 <div id="gestion_plugin"></div>
-> Gestion Plugin
+
+### Gestion Plugin
 
 J'ai mis en place un "protocole" qui permet de créer des plugins très simplement.
 Mon binôme les a utilisés à plusieurs reprises pour réaliser les gestions utilisateur, service, groupes de l'entreprise.
@@ -129,7 +137,8 @@ Listing des différents modules classés en thèmes :
 ![gestion_collaboration_entreprise_ERP-2]({{ site.baseurl }}/img/pages/projects/gestion_collaboration_entreprise_ERP-2.jpg)
 
 <div id="editeur_wysiwyg"></div>
-> Editeur wysiwyg
+
+### Editeur wysiwyg
 
 (http://fr.wikipedia.org/wiki/What_you_see_is_what_you_get)
 

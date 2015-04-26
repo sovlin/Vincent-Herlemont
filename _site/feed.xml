@@ -6,8 +6,8 @@
 </description>
     <link>http://vincent-herlemont.github.io/</link>
     <atom:link href="http://vincent-herlemont.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Apr 2015 19:09:30 +0200</pubDate>
-    <lastBuildDate>Sun, 26 Apr 2015 19:09:30 +0200</lastBuildDate>
+    <pubDate>Sun, 26 Apr 2015 21:11:52 +0200</pubDate>
+    <lastBuildDate>Sun, 26 Apr 2015 21:11:52 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -70,55 +70,84 @@
     
       <item>
         <title>Imagina international (le stage)</title>
-        <description>&lt;p&gt;Site web : http://www.imagina-international.com/
-Entreprise spécialisée dans l’édition d’un ERP (ATEN).&lt;/p&gt;
+        <description>&lt;dl&gt;
+  &lt;dt&gt;Site web : &lt;a href=&quot;http://www.imagina-international.com/&quot;&gt;imagina-international&lt;/a&gt;&lt;/dt&gt;
+  &lt;dd&gt;Entreprise spécialisée dans l’édition d’un ERP (ATEN).&lt;/dd&gt;
+&lt;/dl&gt;
 
-&lt;p&gt;1)Analyse performance
-Problématique&lt;/p&gt;
+&lt;h3 id=&quot;analyse-performance&quot;&gt;Analyse performance&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Problématique :&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Tracer l’utilisation mémoire, tracer l’utilisation CPU. Temps d’exécution des méthodes. Compter le nombre d’invocations par méthode ainsi que leur temps d’exécution. 
 Définir des cas d’utilisation pour les développeurs.
-Définir les bonnes façons de coder / exemple : optimisation de code, comprendre les allocations mémoire  etc …
-Outils testés et documentés : Jmeter, Visual VM+Jconsole, Jprofiler, Yourkit.&lt;/p&gt;
+Définir les bonnes façons de coder / exemple : optimisation de code, comprendre les allocations mémoire  etc …&lt;/p&gt;
 
-&lt;p&gt;Mise en production : Yourkit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outils testés et documentés :&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;3)Plateforme de test
-  Problématique Test Fonctionnel&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Jmeter&lt;/li&gt;
+  &lt;li&gt;Visual VM+Jconsole&lt;/li&gt;
+  &lt;li&gt;Jprofiler&lt;/li&gt;
+  &lt;li&gt;Yourkit.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Mise en production :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Yourkit.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;plateforme-de-test&quot;&gt;Plateforme de test&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Problématique Test Fonctionnel&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Pouvoir créer des scénarios rapidement ; si assistés, c’est un plus. Les scénarios doivent se diviser en blocs d’actions et ainsi permettre de reconstituer de nouveaux scénarios grâce à ces blocs. 
-  Exemple de bloc :  Connexion, Créer une fiche client, Rechercher une fiche client etc … 
-  La solution doit également proposer un rapport détaillé de fin de test.&lt;/p&gt;
+Exemple de bloc :  Connexion, Créer une fiche client, Rechercher une fiche client etc … 
+La solution doit également proposer un rapport détaillé de fin de test.&lt;/p&gt;
 
-&lt;p&gt;Problématique Test Performance&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problématique Test Performance&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;La solution de test choisie doit pouvoir déclencher en parallèle le même scénario avec des jeux de données différents (ou non). 
-  Possibilité de décaler le lancement des scénarios permettant de simuler des cas d’utilisation réelle. Mesure globale des actions.&lt;/p&gt;
+Possibilité de décaler le lancement des scénarios permettant de simuler des cas d’utilisation réelle. Mesure globale des actions.&lt;/p&gt;
 
-&lt;p&gt;Outils testés et documentés ( R&amp;amp;D ) :  soapUI, Casperjs ,Sahi.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outils testés et documentés ( R&amp;amp;D ) :&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Outil de mise en production : Sahi&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;SoapUI&lt;/li&gt;
+  &lt;li&gt;Casperjs &lt;/li&gt;
+  &lt;li&gt;Sahi&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;2)Outil de déploiement&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outil de mise en production :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sahi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;outil-de-dploiement&quot;&gt;Outil de déploiement&lt;/h3&gt;
 
 &lt;p&gt;Cet outil a été créé entièrement en nodeJS avec le soutien des librairies expressjs et socket.io.
 L’interface utilisateur a été créée en utilisant la librairie angularjs. Le design a bénéficié de l’aide de la librairie pure css.&lt;/p&gt;
 
-&lt;p&gt;Fonctionnalités :
-Affichage de l’état (allumé / éteint) des instances
-Affichage de l’état (allumé / éteint) des serveurs
-Mise à jour de déploiement de l’instance
-Affichage en temps réel des traces de debug données par les taches ant
-Verrouillage d’une instance
-Possibilité d’indiquer le nom de la personne travaillant sur l’instance
-L’utilisateur peut indiquer le temps durant lequel l’instance est verrouillée.
-Ce temps décrémentera jusqu’à déverrouillage de l’instance.
-  Téléchargement de l’instance compilée.
-  Accès interne / externe de l’instance.
-  Upload fichier HTML5
-  Consultation des fichiers
-  Téléchargement des fichiers
-  Suppression des fichiers&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fonctionnalités :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Affichage de l’état (allumé / éteint) des instances&lt;/li&gt;
+  &lt;li&gt;Affichage de l’état (allumé / éteint) des serveurs&lt;/li&gt;
+  &lt;li&gt;Mise à jour de déploiement de l’instance &lt;/li&gt;
+  &lt;li&gt;Affichage en temps réel des traces de debug données par les taches ant&lt;/li&gt;
+  &lt;li&gt;Verrouillage d’une instance&lt;/li&gt;
+  &lt;li&gt;Possibilité d’indiquer le nom de la personne travaillant sur l’instance&lt;/li&gt;
+  &lt;li&gt;L’utilisateur peut indiquer le temps durant lequel l’instance est verrouillée.&lt;/li&gt;
+  &lt;li&gt;Ce temps décrémentera jusqu’à déverrouillage de l’instance.&lt;/li&gt;
+  &lt;li&gt;Téléchargement de l’instance compilée.&lt;/li&gt;
+  &lt;li&gt;Accès interne / externe de l’instance.&lt;/li&gt;
+  &lt;li&gt;Upload fichier HTML5&lt;/li&gt;
+  &lt;li&gt;Consultation des fichiers&lt;/li&gt;
+  &lt;li&gt;Téléchargement des fichiers&lt;/li&gt;
+  &lt;li&gt;Suppression des fichiers&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/pages/professional_experience/imagina-international-stage-outil_deploiment.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 </description>
@@ -135,7 +164,7 @@ Ce temps décrémentera jusqu’à déverrouillage de l’instance.
     
       <item>
         <title>Playing out doors (voyage en angleterre)</title>
-        <description>&lt;p&gt;Playingoutdoors
+        <description>&lt;p&gt;Playingoutdoors,
 Placé(Localisé) dans un village petit, rural au bord du Bain, Swainswick des Explorateurs(Sondes) fournit aux enfants le jeu(la pièce) extérieur aventureux et stimulant et des expériences à portée pédagogique.&lt;/p&gt;
 
 &lt;p&gt;En bref, qui continue aux Explorateurs(Sondes) Swainswick ?
@@ -223,9 +252,8 @@ Réalisé par : Vincent CARTIER &amp;amp; Vincent HERLEMONT&lt;/p&gt;
 Nous nous sommes donc intéressés à cette problématique et avons essayé de résoudre celle-ci par l’intermédiaire d’une application de type « réseau communautaire » destinée au monde professionnel (TPE/PME).&lt;/p&gt;
 
 &lt;div id=&quot;ergonomie_et_arborescences&quot;&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Ergonomie &amp;amp; Arborescences&lt;/p&gt;
-&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;ergonomie--arborescences&quot;&gt;Ergonomie &amp;amp; Arborescences&lt;/h3&gt;
 
 &lt;p&gt;L’interface :&lt;/p&gt;
 
@@ -239,9 +267,8 @@ Conçue de façon à accueillir et pourvoir parcourir des arborescences illimit�
 &lt;p&gt;Popu (html/javascript) qui permet l’authentification de connections.&lt;/p&gt;
 
 &lt;div id=&quot;page_daccueil_et_connection&quot;&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Page d’accueil &amp;amp; Connection&lt;/p&gt;
-&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;page-daccueil--connection&quot;&gt;Page d’accueil &amp;amp; Connection&lt;/h3&gt;
 
 &lt;p&gt;Message page d’accueil où l’utilisateur, dans notre cas anonyme, n’est pas connecté, n’est pas autorisé à visualiser la page.
 &lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_PA-1.jpg&quot; alt=&quot;gestion_collaboration_entreprise_PA-1&quot; /&gt;&lt;/p&gt;
@@ -256,29 +283,31 @@ Conçue de façon à accueillir et pourvoir parcourir des arborescences illimit�
 &lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_PA-4.jpg&quot; alt=&quot;gestion_collaboration_entreprise_PA-4&quot; /&gt;&lt;/p&gt;
 
 &lt;div id=&quot;gestion_des_utilisateurs&quot;&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Gestion des utilisateurs&lt;/p&gt;
-&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;gestion-des-utilisateurs&quot;&gt;Gestion des utilisateurs&lt;/h3&gt;
 
 &lt;p&gt;( on utilise ici la gestion des plugins )
 Ces plugins on été développés par Vincent Cartier mon binôme de projet.&lt;/p&gt;
 
-&lt;p&gt;Plugin : Formulaire d’ajout de collaborateurs.
-&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-1.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Plugin : Formulaire d’ajout de collaborateurs.&lt;/p&gt;
 
-&lt;p&gt;Plugin : Listage des utilisateurs
-&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-2.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-1.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-1&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Plugin : Gestion des services
-&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-3.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Plugin : Listage des utilisateurs&lt;/p&gt;
 
-&lt;p&gt;Plugin : gestion des groupes
-&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-4.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-2.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Plugin : Gestion des services&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-3.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Plugin : gestion des groupes&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-4.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-4&quot; /&gt;&lt;/p&gt;
 
 &lt;div id=&quot;administration_de_la_plate-forme&quot;&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Administration de la plate-forme&lt;/p&gt;
-&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;administration-de-la-plate-forme&quot;&gt;Administration de la plate-forme&lt;/h3&gt;
 
 &lt;p&gt;Cette partie permet de gérer l’arborescence du site en fonction des droits de l’utilisateur.&lt;/p&gt;
 
@@ -286,9 +315,8 @@ Ces plugins on été développés par Vincent Cartier mon binôme de projet.&lt;
 &lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_AP-1.jpg&quot; alt=&quot;gestion_collaboration_entreprise_AP-1&quot; /&gt;&lt;/p&gt;
 
 &lt;div id=&quot;gestion_des_droits&quot;&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Gestion des droits&lt;/p&gt;
-&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;gestion-des-droits&quot;&gt;Gestion des droits&lt;/h3&gt;
 
 &lt;p&gt;La gestion des droits par groupe d’utilisateurs de n’importe quels plugin ou page à été très difficile à réaliser.&lt;/p&gt;
 
@@ -299,9 +327,8 @@ Ces plugins on été développés par Vincent Cartier mon binôme de projet.&lt;
 &lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_GD-2.png&quot; alt=&quot;gestion_collaboration_entreprise_GD-2&quot; /&gt;&lt;/p&gt;
 
 &lt;div id=&quot;gestion_plugin&quot;&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Gestion Plugin&lt;/p&gt;
-&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;gestion-plugin&quot;&gt;Gestion Plugin&lt;/h3&gt;
 
 &lt;p&gt;J’ai mis en place un “protocole” qui permet de créer des plugins très simplement.
 Mon binôme les a utilisés à plusieurs reprises pour réaliser les gestions utilisateur, service, groupes de l’entreprise.&lt;/p&gt;
@@ -319,9 +346,8 @@ Représentation réelle des plugins.
 &lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_ERP-2.jpg&quot; alt=&quot;gestion_collaboration_entreprise_ERP-2&quot; /&gt;&lt;/p&gt;
 
 &lt;div id=&quot;editeur_wysiwyg&quot;&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Editeur wysiwyg&lt;/p&gt;
-&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;editeur-wysiwyg&quot;&gt;Editeur wysiwyg&lt;/h3&gt;
 
 &lt;p&gt;(http://fr.wikipedia.org/wiki/What_you_see_is_what_you_get)&lt;/p&gt;
 
