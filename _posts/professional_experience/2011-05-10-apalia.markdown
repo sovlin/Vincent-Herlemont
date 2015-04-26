@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Amysta cloud billing and metering "
+date: 2012-7-10 00:00:00
+enddate: 2012-08-14 00:00:00
+categories: professional_experience stage cdd
+role: "Developer/Analyst"
+---
+
+Apalia est une société de conseil et d'intégration spécialisée dans les infrastructures Cloud Computing. 
+Nous assistons les entreprises et les fournisseurs de services à construire des Cloud IaaS (Infrastructure as a Service) 
+
+Site Web :  http://www.apalia.net/ 
+
+Ce projet a consisté à développer une application pour facturer l’usage des utilisateurs sur le cloud.
+Le projet ne serra pas expliqué en détail en raison du respect de sa clause de confidentialité.

@@ -60,4 +60,4 @@ Ce temps décrémentera jusqu’à déverrouillage de l'instance.
   Téléchargement des fichiers
   Suppression des fichiers
 
-![My helpful screenshot]({{ site.baseurl }}/img/pages/professional_experience/outil_deploiment.jpg)
+![My helpful screenshot]({{ site.baseurl }}/img/pages/professional_experience/imagina-international-stage-outil_deploiment.jpg)

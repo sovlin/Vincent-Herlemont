@@ -6,8 +6,8 @@
 </description>
     <link>http://vincent-herlemont.github.io/</link>
     <atom:link href="http://vincent-herlemont.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 25 Apr 2015 20:28:44 +0200</pubDate>
-    <lastBuildDate>Sat, 25 Apr 2015 20:28:44 +0200</lastBuildDate>
+    <pubDate>Sun, 26 Apr 2015 15:24:18 +0200</pubDate>
+    <lastBuildDate>Sun, 26 Apr 2015 15:24:18 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -105,7 +105,7 @@ Ce temps décrémentera jusqu’à déverrouillage de l’instance.
   Téléchargement des fichiers
   Suppression des fichiers&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/pages/professional_experience/outil_deploiment.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/pages/professional_experience/imagina-international-stage-outil_deploiment.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 May 2013 02:00:00 +0200</pubDate>
         <link>http://vincent-herlemont.github.io/professional_experience/stage/2013/05/20/imagina-international-stage.html</link>
@@ -115,6 +115,65 @@ Ce temps décrémentera jusqu’à déverrouillage de l’instance.
         <category>professional_experience</category>
         
         <category>stage</category>
+        
+      </item>
+    
+      <item>
+        <title>Playing out doors (voyage en angleterre)</title>
+        <description>&lt;p&gt;Playingoutdoors
+Placé(Localisé) dans un village petit, rural au bord du Bain, Swainswick des Explorateurs(Sondes) fournit aux enfants le jeu(la pièce) extérieur aventureux et stimulant et des expériences à portée pédagogique.&lt;/p&gt;
+
+&lt;p&gt;En bref, qui continue aux Explorateurs(Sondes) Swainswick ?
+Toutes les activités que nous exécutons(dirigeons) ont deux choses à leur cœur : les gens(le peuple) et en plein air. Les activités que nous offrons sont : aventures de jeu(pièce) pour enfants et jeunes après école et dans les vacances; un club de jeunesse(jeune) de vendredi soir; partis(fêtes) le samedi; parents et un groupe d’enfants d’âge préscolaire; plus étude d’aventures pour groupes scolaires ici ou à leur école. Les aventures de jour férié(de congé) sont exécutées(dirigées) dans toutes les vacances, pour au moins deux ou trois jours et quelques jours d’encart. Nous sommes aussi une petite communauté, avec huit d’entre nous dans le ménage, tous les adultes marchant d’une manière ou d’une autre pour des Explorateurs(Sondes) Swainswick.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;s12 center-align&quot;&gt;
+        &lt;a class=&quot;btn&quot; target=&quot;_banck&quot; href=&quot;http://swainswickexplorers.blogspot.co.uk/2012/08/explorer-day-younger-group-friday-3rd.html#%21/2012/08/explorer-day-7-10-yr-olds-wednesday-1st.html&quot;&gt;
+           Swainswickexplorers 1
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;s12 center-align&quot;&gt;
+        &lt;a class=&quot;btn&quot; target=&quot;_banck&quot; href=&quot;http://swainswickexplorers.blogspot.co.uk/2012/08/explorer-day-7-10-yr-olds-wednesday-1st.html&quot;&gt;
+           Swainswickexplorers 2
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;s12 center-align&quot;&gt;
+        &lt;img src=&quot;/img/pages/professional_experience/playingoutdoors-1.jpg&quot; width=&quot;500px&quot; /&gt;
+        &lt;img src=&quot;/img/pages/professional_experience/playingoutdoors-2.jpg&quot; width=&quot;500px&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 10 Jul 2012 02:00:00 +0200</pubDate>
+        <link>http://vincent-herlemont.github.io/professional_experience/voluntary/2012/07/10/playingoutdoors.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/professional_experience/voluntary/2012/07/10/playingoutdoors.html</guid>
+        
+        
+        <category>professional_experience</category>
+        
+        <category>voluntary</category>
+        
+      </item>
+    
+      <item>
+        <title>Amysta cloud billing and metering </title>
+        <description>&lt;p&gt;Apalia est une société de conseil et d’intégration spécialisée dans les infrastructures Cloud Computing. 
+Nous assistons les entreprises et les fournisseurs de services à construire des Cloud IaaS (Infrastructure as a Service) &lt;/p&gt;
+
+&lt;p&gt;Site Web :  http://www.apalia.net/ &lt;/p&gt;
+
+&lt;p&gt;Ce projet a consisté à développer une application pour facturer l’usage des utilisateurs sur le cloud.
+Le projet ne serra pas expliqué en détail en raison du respect de sa clause de confidentialité.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Jul 2012 02:00:00 +0200</pubDate>
+        <link>http://vincent-herlemont.github.io/professional_experience/stage/cdd/2012/07/10/apalia.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/professional_experience/stage/cdd/2012/07/10/apalia.html</guid>
+        
+        
+        <category>professional_experience</category>
+        
+        <category>stage</category>
+        
+        <category>cdd</category>
         
       </item>
     
