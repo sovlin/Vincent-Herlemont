@@ -23,6 +23,7 @@
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         <a href="/" class="brand-logo">&nbsp;&nbsp; Lab & web</a>
         <ul class="right hide-on-med-and-down">
           
@@ -72,16 +73,16 @@
 </header>
 
 
-    <div>
+    <main>
       <div>
         <div class="container">
 
-  <header>
+  <div>
     <h5 class="thin" >Welcome to Jekyll!</h5>
     <p>Apr 24, 2015</p>
-  </header>
+  </div>
 
-  <article>
+  <article class="article">
     <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
@@ -102,7 +103,7 @@
 </div>
 
       </div>
-    </div>
+    </main>
 
     <footer class="page-footer">
   <div class="container">
@@ -131,7 +132,70 @@
   </div>
 </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="/js/materialize.min.js"></script>
+<script type = "text/javascript" >
+        $(document).ready(function () {
+            if ($("#slide-out").length) {
+                $('.button-collapse').sideNav({
+                            menuWidth: 300, // Default is 240
+                            edge: 'left', // Choose the horizontal origin
+                            closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                        }
+                );
+                $("header, main, footer").toggleClass("toshift");
+
+                // Cache selectors
+                var lastId,
+                        topMenu = $("#slide-out"),
+                        topMenuHeight = 200,
+                // All list items
+                        menuItems = topMenu.find("a"),
+                // Anchors corresponding to menu items
+                        scrollItems = menuItems.map(function(){
+                            var item = $($(this).attr("href"));
+                            if (item.length) { return item; }
+                        });
+
+                // Bind click handler to menu items
+                // so we can get a fancy scroll animation
+                menuItems.click(function(e){
+                    var href = $(this).attr("href"),
+                            offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+                    $('html, body').stop().animate({
+                        scrollTop: offsetTop
+                    }, 300);
+                    e.preventDefault();
+                });
+
+                // Bind to scroll
+                $(window).scroll(function(){
+                    // Get container scroll position
+                    var fromTop = $(this).scrollTop()+topMenuHeight;
+
+                    // Get id of current scroll item
+                    var cur = scrollItems.map(function(){
+                        if ($(this).offset().top < fromTop)
+                            return this;
+                    });
+                    // Get the id of the current element
+                    cur = cur[cur.length-1];
+                    var id = cur && cur.length ? cur[0].id : "";
+
+                    if (lastId !== id) {
+                        lastId = id;
+                        // Set/remove active class
+                        menuItems
+                                .parent().removeClass("active")
+                                .end().filter("[href=#"+id+"]").parent().addClass("active");
+                    }
+                });
+
+            }
+        });
+        //read https://jsfiddle.net/mekwall/up4nu/
+</script>
+
+
   </body>
 
 </html>

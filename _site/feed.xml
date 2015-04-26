@@ -6,8 +6,8 @@
 </description>
     <link>http://vincent-herlemont.github.io/</link>
     <atom:link href="http://vincent-herlemont.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Apr 2015 15:24:18 +0200</pubDate>
-    <lastBuildDate>Sun, 26 Apr 2015 15:24:18 +0200</lastBuildDate>
+    <pubDate>Sun, 26 Apr 2015 19:09:30 +0200</pubDate>
+    <lastBuildDate>Sun, 26 Apr 2015 19:09:30 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -35,6 +35,21 @@
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Plan climat-énergie territorial</title>
+        <description>&lt;p&gt;Comming soon !!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Mar 2014 01:00:00 +0100</pubDate>
+        <link>http://vincent-herlemont.github.io/projects/university/2014/03/10/PCET.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/projects/university/2014/03/10/PCET.html</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>university</category>
         
       </item>
     
@@ -174,6 +189,161 @@ Le projet ne serra pas expliqué en détail en raison du respect de sa clause de
         <category>stage</category>
         
         <category>cdd</category>
+        
+      </item>
+    
+      <item>
+        <title>Application de Communication Intra-Entreprise</title>
+        <description>&lt;p&gt;Projet Officiel IUT R&amp;amp;T2&lt;/p&gt;
+
+&lt;p&gt;N° de projet : 44
+Nom du projet : Application de Communication Intra-Entreprise
+Nom du tuteur : Frédéric POURRAZ
+Réalisé par : Vincent CARTIER &amp;amp; Vincent HERLEMONT&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;s12 center-align&quot;&gt;
+        &lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise-projet.png&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul id=&quot;slide-out&quot; class=&quot;side-nav fixed&quot;&gt;
+   &lt;li&gt;&lt;a href=&quot;#ergonomie_et_arborescences&quot;&gt;Ergonomie &amp;amp; Arborescences&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#page_daccueil_et_connection&quot;&gt;Page d&#39;accueil &amp;amp; Connection&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#gestion_des_utilisateurs&quot;&gt;Gestion des utilisateurs&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#administration_de_la_plate-forme&quot;&gt;Administration de la plate-forme&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#gestion_des_droits&quot;&gt;Gestion des droits&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#gestion_plugin&quot;&gt;Gestion Plugin&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#editeur_wysiwyg&quot;&gt;Editeur wysiwyg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PRESENTATION DU PROJET&lt;/p&gt;
+
+&lt;p&gt;Pour une entreprise, créer une cohésion entre les collaborateurs, les services, les équipes n’est pas toujours chose aisée, spécialement à moyen et long terme.
+Nous nous sommes donc intéressés à cette problématique et avons essayé de résoudre celle-ci par l’intermédiaire d’une application de type « réseau communautaire » destinée au monde professionnel (TPE/PME).&lt;/p&gt;
+
+&lt;div id=&quot;ergonomie_et_arborescences&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Ergonomie &amp;amp; Arborescences&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;L’interface :&lt;/p&gt;
+
+&lt;p&gt;Je l’ai entièrement pensée et programmée.
+Conçue de façon à accueillir et pourvoir parcourir des arborescences illimitées de manière très simple et ludique.
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_interface_all.png&quot; alt=&quot;gestion_collaboration_entreprise_interface_all&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Gestion arborescences :
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_arbre.png&quot; alt=&quot;gestion_collaboration_entreprise_arbre&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Popu (html/javascript) qui permet l’authentification de connections.&lt;/p&gt;
+
+&lt;div id=&quot;page_daccueil_et_connection&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Page d’accueil &amp;amp; Connection&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Message page d’accueil où l’utilisateur, dans notre cas anonyme, n’est pas connecté, n’est pas autorisé à visualiser la page.
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_PA-1.jpg&quot; alt=&quot;gestion_collaboration_entreprise_PA-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Popu (html/javascript) qui permet l’authentification de connections.
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_PA-2.png&quot; alt=&quot;gestion_collaboration_entreprise_PA-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Message d’erreur en cas d’échec de connections.
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_PA-3.png&quot; alt=&quot;gestion_collaboration_entreprise_PA-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Voici l’interface de l’utilisateur une fois connecté.
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_PA-4.jpg&quot; alt=&quot;gestion_collaboration_entreprise_PA-4&quot; /&gt;&lt;/p&gt;
+
+&lt;div id=&quot;gestion_des_utilisateurs&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Gestion des utilisateurs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;( on utilise ici la gestion des plugins )
+Ces plugins on été développés par Vincent Cartier mon binôme de projet.&lt;/p&gt;
+
+&lt;p&gt;Plugin : Formulaire d’ajout de collaborateurs.
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-1.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Plugin : Listage des utilisateurs
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-2.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Plugin : Gestion des services
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-3.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Plugin : gestion des groupes
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_FGGU-4.jpg&quot; alt=&quot;gestion_collaboration_entreprise_FGGU-4&quot; /&gt;&lt;/p&gt;
+
+&lt;div id=&quot;administration_de_la_plate-forme&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Administration de la plate-forme&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Cette partie permet de gérer l’arborescence du site en fonction des droits de l’utilisateur.&lt;/p&gt;
+
+&lt;p&gt;Voici l’ajout d’une page à celle courante :
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_AP-1.jpg&quot; alt=&quot;gestion_collaboration_entreprise_AP-1&quot; /&gt;&lt;/p&gt;
+
+&lt;div id=&quot;gestion_des_droits&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Gestion des droits&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La gestion des droits par groupe d’utilisateurs de n’importe quels plugin ou page à été très difficile à réaliser.&lt;/p&gt;
+
+&lt;p&gt;Voici la gestion des droits sur une page :
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_GD-1.png&quot; alt=&quot;gestion_collaboration_entreprise_GD-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Explication des gestions d’exception des droits :
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_GD-2.png&quot; alt=&quot;gestion_collaboration_entreprise_GD-2&quot; /&gt;&lt;/p&gt;
+
+&lt;div id=&quot;gestion_plugin&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Gestion Plugin&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;J’ai mis en place un “protocole” qui permet de créer des plugins très simplement.
+Mon binôme les a utilisés à plusieurs reprises pour réaliser les gestions utilisateur, service, groupes de l’entreprise.&lt;/p&gt;
+
+&lt;p&gt;Un dossier dans l’arborescence du logiciel est prévue pour faire glisser les dossiers contenant le plugin en question.
+Le  plugin n’a pas besoin d’installation ; il est immédiatement disponible dans l’interface d’ajout de plugin.&lt;/p&gt;
+
+&lt;p&gt;Voici l’interface en 3 parties :
+Un formulaire d’ajout du module en haut.
+Une représentation succincte des modules ; on peut modifier l’ordre avec un simple glissement de la  souris.
+Représentation réelle des plugins.
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_ERP-1.jpg&quot; alt=&quot;gestion_collaboration_entreprise_ERP-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Listing des différents modules classés en thèmes :
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_ERP-2.jpg&quot; alt=&quot;gestion_collaboration_entreprise_ERP-2&quot; /&gt;&lt;/p&gt;
+
+&lt;div id=&quot;editeur_wysiwyg&quot;&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Editeur wysiwyg&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(http://fr.wikipedia.org/wiki/What_you_see_is_what_you_get)&lt;/p&gt;
+
+&lt;p&gt;Voici un éditeur wysiwyg totalement de ma conception en javascript avec possibilité de reporting instantané ( exemple google doc ).&lt;/p&gt;
+
+&lt;p&gt;Voici un texte simple :
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_E-1.jpg&quot; alt=&quot;gestion_collaboration_entreprise_E-1&quot; /&gt;
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_E-2.jpg&quot; alt=&quot;gestion_collaboration_entreprise_E-2&quot; /&gt;
+&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_E-3.jpg&quot; alt=&quot;gestion_collaboration_entreprise_E-3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Incorporation d’images + soulignement en caractère gras.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/pages/projects/gestion_collaboration_entreprise_E-4.jpg&quot; alt=&quot;gestion_collaboration_entreprise_E-4&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 Mar 2010 01:00:00 +0100</pubDate>
+        <link>http://vincent-herlemont.github.io/projects/university/2010/03/19/gestion_collaboration_entreprise.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/projects/university/2010/03/19/gestion_collaboration_entreprise.html</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>university</category>
         
       </item>
     

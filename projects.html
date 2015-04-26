@@ -5,9 +5,12 @@ permalink: /projects/
 imgfront: projects.png
 n: 1
 ---
-
-<div class="row">
-    <div class="s12 center-align">
-        Coming soon !!
+{% assign mycategory = site.categories.projects %}
+<div class="container">
+    {% for post in mycategory %}
+    <div><a href="{{post.url | site.baseurl}}">{{ post.title }}</a></div>
+    <div>
+        {{ post.excerpt }}
     </div>
+    {% endfor %}
 </div>
