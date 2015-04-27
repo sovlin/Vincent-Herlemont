@@ -57,13 +57,14 @@ layout: default
                     <img class="activator" src="img/pages/{{page.imgfront}}">
                 </div>
                 <div class="card-action">
+                    <a class="btn disabled"><i class="mdi-action-toc left"></i>{{site.categories[page.categories].size}}&nbsp;</a>
                     <a href="{{ page.permalink | site.baseurl }}"
                        class="btn waves-effect waves-light light-blue">Open</a>
                 </div>
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">{{ page.title | capitalize }} <i
                             class="mdi-navigation-close right"></i></span>
-                    <p>{{ page | capitalize }}</p>
+                    <ul class="tags"><li><a>{{site.categories[page.categories].size}}</a></li></ul>
                 </div>
             </div>
         </div>

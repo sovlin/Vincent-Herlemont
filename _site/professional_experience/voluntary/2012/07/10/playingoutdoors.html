@@ -149,7 +149,7 @@ Toutes les activités que nous exécutons(dirigeons) ont deux choses à leur cœ
 </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="/js/materialize.min.js"></script>
-<script type = "text/javascript" >
+<script type="text/javascript" >
         $(document).ready(function () {
             if ($("#slide-out").length) {
                 $('.button-collapse').sideNav({
@@ -206,6 +206,8 @@ Toutes les activités que nous exécutons(dirigeons) ont deux choses à leur cœ
                     }
                 });
 
+            }else{
+                $('.button-collapse').addClass("hide")
             }
         });
         //read https://jsfiddle.net/mekwall/up4nu/

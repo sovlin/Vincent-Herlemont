@@ -6,8 +6,8 @@
 </description>
     <link>http://vincent-herlemont.github.io/</link>
     <atom:link href="http://vincent-herlemont.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Apr 2015 21:11:52 +0200</pubDate>
-    <lastBuildDate>Sun, 26 Apr 2015 21:11:52 +0200</lastBuildDate>
+    <pubDate>Mon, 27 Apr 2015 11:18:54 +0200</pubDate>
+    <lastBuildDate>Mon, 27 Apr 2015 11:18:54 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -149,16 +149,37 @@ L’interface utilisateur a été créée en utilisant la librairie angularjs. L
   &lt;li&gt;Suppression des fichiers&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/pages/professional_experience/imagina-international-stage-outil_deploiment.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/pages/professional_experience/imagina-international-stage-outil_deploiment.jpg&quot; alt=&quot;deploiment&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 20 May 2013 02:00:00 +0200</pubDate>
         <link>http://vincent-herlemont.github.io/professional_experience/stage/2013/05/20/imagina-international-stage.html</link>
         <guid isPermaLink="true">http://vincent-herlemont.github.io/professional_experience/stage/2013/05/20/imagina-international-stage.html</guid>
         
+        <category>java,javascript</category>
+        
         
         <category>professional_experience</category>
         
         <category>stage</category>
+        
+      </item>
+    
+      <item>
+        <title>Android arboretum</title>
+        <description>&lt;p&gt;Le but du projet Pedestrian Urban Navigation est de permettre d’effectuer des requêtes sur les éléments de l’environnement (Points Of Interest) à partir d’une application Android et d’obtenir différentes informations telles que la description textuelle ou vocale ou encore une ou plusieurs photos de ce que le POI localise.&lt;/p&gt;
+
+&lt;p&gt;Rapport : &lt;a href=&quot;/downloads/pages/projects/android-arboretum-rapport.pdf&quot; download=&quot;&quot;&gt;Télécharger le rapport&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/pages/projects/android-arboretum-1.png&quot; alt=&quot;Aperçu&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Mar 2013 01:00:00 +0100</pubDate>
+        <link>http://vincent-herlemont.github.io/projects/university/2013/03/05/android-arboretum.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/projects/university/2013/03/05/android-arboretum.html</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>university</category>
         
       </item>
     
@@ -199,18 +220,59 @@ Toutes les activités que nous exécutons(dirigeons) ont deux choses à leur cœ
       </item>
     
       <item>
+        <title>Site web pour l&#39;immobilier</title>
+        <description>&lt;p&gt;Le sujet de ce stage est de modélisé et réalisé un site d’annonces immobilière, destiner à 
+l’imobilier neuf.&lt;/p&gt;
+
+&lt;p&gt;Le but du projet de crée un espace administrable ciblé au besoin de la 
+diffusion d’annonce immobilier en ligne, la gesion des région par zone économique des 
+catégorie et type de bien immobiler,anisi metre a disposition un dispositif d’importation de 
+passerelle pour les professionnel de   l’immobilier. Et d’un espace de création d’annonces pour 
+les promoteur, agent immobilier, Lotisseurs,Marie,Particulier etc …
+Les Aspects technique du stage sont la conception et modélisation suivant les besoin du client, 
+référencement. Ainsi de crée une base solide pour pouvoir faire évolué le site selon les besoins.&lt;/p&gt;
+
+&lt;p&gt;Les technologies principale utilisées sont :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;php&lt;/li&gt;
+  &lt;li&gt;smarty&lt;/li&gt;
+  &lt;li&gt;mysql&lt;/li&gt;
+  &lt;li&gt;html&lt;/li&gt;
+  &lt;li&gt;css&lt;/li&gt;
+  &lt;li&gt;javascript&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 07 May 2012 02:00:00 +0200</pubDate>
+        <link>http://vincent-herlemont.github.io/professional_experience/stage/cdd/2012/05/07/siteweb-immobilier.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/professional_experience/stage/cdd/2012/05/07/siteweb-immobilier.html</guid>
+        
+        <category>php</category>
+        
+        
+        <category>professional_experience</category>
+        
+        <category>stage</category>
+        
+        <category>cdd</category>
+        
+      </item>
+    
+      <item>
         <title>Amysta cloud billing and metering </title>
         <description>&lt;p&gt;Apalia est une société de conseil et d’intégration spécialisée dans les infrastructures Cloud Computing. 
 Nous assistons les entreprises et les fournisseurs de services à construire des Cloud IaaS (Infrastructure as a Service) &lt;/p&gt;
 
-&lt;p&gt;Site Web :  http://www.apalia.net/ &lt;/p&gt;
+&lt;p&gt;Site Web :  &lt;a href=&quot;http://www.apalia.net/&quot;&gt;http://www.apalia.net/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Ce projet a consisté à développer une application pour facturer l’usage des utilisateurs sur le cloud.
 Le projet ne serra pas expliqué en détail en raison du respect de sa clause de confidentialité.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 10 Jul 2012 02:00:00 +0200</pubDate>
-        <link>http://vincent-herlemont.github.io/professional_experience/stage/cdd/2012/07/10/apalia.html</link>
-        <guid isPermaLink="true">http://vincent-herlemont.github.io/professional_experience/stage/cdd/2012/07/10/apalia.html</guid>
+        <pubDate>Sun, 10 Jul 2011 02:00:00 +0200</pubDate>
+        <link>http://vincent-herlemont.github.io/professional_experience/stage/cdd/2011/07/10/apalia.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/professional_experience/stage/cdd/2011/07/10/apalia.html</guid>
+        
+        <category>java</category>
         
         
         <category>professional_experience</category>
@@ -365,6 +427,51 @@ Représentation réelle des plugins.
         <pubDate>Fri, 19 Mar 2010 01:00:00 +0100</pubDate>
         <link>http://vincent-herlemont.github.io/projects/university/2010/03/19/gestion_collaboration_entreprise.html</link>
         <guid isPermaLink="true">http://vincent-herlemont.github.io/projects/university/2010/03/19/gestion_collaboration_entreprise.html</guid>
+        
+        
+        <category>projects</category>
+        
+        <category>university</category>
+        
+      </item>
+    
+      <item>
+        <title>Emploi du temps DUT</title>
+        <description>&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ce projet a été mené à bien pour le Département Réseau et Télécom d’Annecy.&lt;/p&gt;
+
+&lt;p&gt;==&amp;gt; lien direct vers le projet : &lt;a href=&quot;http://wbm2.net&quot;&gt;http://wbm2.net&lt;/a&gt; (le projet n’est plus disponible)&lt;/p&gt;
+
+&lt;p&gt;Le but de l’application est de permettre l’affichage de l’emploi du temps de manière permanente et plus simple.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Technologies utilisées&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Langages utilisés : &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;html&lt;/li&gt;
+  &lt;li&gt;javascript&lt;/li&gt;
+  &lt;li&gt;php&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Je me suis aidé de la librairie &lt;strong&gt;jquery&lt;/strong&gt; pour mener à bien les requêtes ajax de façon plus concise.&lt;/p&gt;
+
+&lt;p&gt;Le système met en cache les images correspondant à chaque groupe chaque semaine de l’année et les classe dans une arborescence.
+Les images sont mises en cache toutes les 24 heures pour prendre en compte les modifications.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;&lt;strong&gt;Le Projet&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;L’interface :&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/pages/projects/emploi-du-temps-dut-general.png&quot; alt=&quot;Générale&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 31 Aug 2009 02:00:00 +0200</pubDate>
+        <link>http://vincent-herlemont.github.io/projects/university/2009/08/31/emploi-du-temps-dut.html</link>
+        <guid isPermaLink="true">http://vincent-herlemont.github.io/projects/university/2009/08/31/emploi-du-temps-dut.html</guid>
         
         
         <category>projects</category>

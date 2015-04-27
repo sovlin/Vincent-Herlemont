@@ -5,6 +5,9 @@ date: 2010-03-19 00:00:00
 enddate: 2011-03-01 00:00:00
 categories: projects university
 role: "Software/Architect"
+excerpt: Pour une entreprise, créer une cohésion entre les collaborateurs, les services, les équipes n'est pas toujours chose aisée, spécialement à moyen et long terme.
+         Nous nous sommes donc intéressés à cette problématique et avons essayé de résoudre celle-ci par l'intermédiaire d'une application de type « réseau communautaire » destinée au monde professionnel (TPE/PME).
+
 ---
 
 

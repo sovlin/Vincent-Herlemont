@@ -7,8 +7,9 @@ categories: professional_experience stage
 role: "Developer/Analyst"
 includeExcerpt: true
 excerpt: 
-    It's my 
-    internship ...
+    "Test plateform , analysis  performences and automatic deployment
+    Compare solutions and documents. "
+tags: java,javascript
 ---
 Site web : [imagina-international](http://www.imagina-international.com/)
 : Entreprise spécialisée dans l'édition d'un ERP (ATEN).
@@ -78,4 +79,4 @@ L'interface utilisateur a été créée en utilisant la librairie angularjs. Le 
 - Téléchargement des fichiers
 - Suppression des fichiers
 
-![My helpful screenshot]({{ site.baseurl }}/img/pages/professional_experience/imagina-international-stage-outil_deploiment.jpg)
+![deploiment]({{ site.baseurl }}/img/pages/professional_experience/imagina-international-stage-outil_deploiment.jpg)
