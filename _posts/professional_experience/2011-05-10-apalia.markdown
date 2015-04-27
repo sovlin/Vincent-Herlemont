@@ -8,7 +8,7 @@ role: "Developer/Analyst"
 includeExcerpt: true
 excerpt:
     "Development of a billing and monitoring solution for the cloud"
-tags: java
+tags: java javascript openstack
 ---
 
 Apalia est une société de conseil et d'intégration spécialisée dans les infrastructures Cloud Computing. 

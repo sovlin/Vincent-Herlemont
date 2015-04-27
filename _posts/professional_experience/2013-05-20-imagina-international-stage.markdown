@@ -9,10 +9,10 @@ includeExcerpt: true
 excerpt: 
     "Test plateform , analysis  performences and automatic deployment
     Compare solutions and documents. "
-tags: java,javascript
+tags: java angularjs casperjs sahi  yourkit
 ---
-Site web : [imagina-international](http://www.imagina-international.com/)
-: Entreprise spécialisée dans l'édition d'un ERP (ATEN).
+
+Imagina international : Entreprise spécialisée dans l'édition d'un ERP (ATEN).
 
 ### Analyse performance
 

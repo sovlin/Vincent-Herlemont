@@ -6,10 +6,23 @@ imgfront: professional_experience.png
 n: 1
 categories: professional_experience
 ---
+{% assign mycategoryname = 'professional_experience' %}
 {% assign mycategory = site.categories.professional_experience %}
 <div class="container">
 {% for post in mycategory %}
-    <div><a href="{{post.url | site.baseurl}}">{{ post.title }}</a></div>
+    <div>
+        {{categories}}
+        {% for subcategory in post.categories %}
+            {% if subcategory != mycategoryname %}
+                <span class="ibadge category">{{subcategory}}</span>
+            {% endif %}
+        {% endfor %}<a href="{{post.url | site.baseurl}}">{{ post.title }}</a>
+    </div>
+    <div>
+        {% for subtags in post.tags %}
+            <span class="ibadge itags">{{subtags}}</span>
+        {% endfor %}
+    </div>
     <div>
         <p>
             {{ post.excerpt }}

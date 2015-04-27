@@ -6,12 +6,27 @@ imgfront: projects.png
 n: 1
 categories: projects
 ---
+{% assign mycategoryname = 'projects' %}
 {% assign mycategory = site.categories.projects %}
 <div class="container">
     {% for post in mycategory %}
-    <div><a href="{{post.url | site.baseurl}}">{{ post.title }}</a></div>
     <div>
-        {{ post.excerpt }}
+        {{categories}}
+        {% for subcategory in post.categories %}
+        {% if subcategory != mycategoryname %}
+        <span class="ibadge category">{{subcategory}}</span>
+        {% endif %}
+        {% endfor %}<a href="{{post.url | site.baseurl}}">{{ post.title }}</a>
+    </div>
+    <div>
+        {% for subtags in post.tags %}
+        <span class="ibadge itags">{{subtags}}</span>
+        {% endfor %}
+    </div>
+    <div>
+        <p>
+            {{ post.excerpt }}
+        </p>
     </div>
     {% endfor %}
 </div>
