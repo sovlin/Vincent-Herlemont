@@ -265,8 +265,12 @@ Représentation réelle des plugins.
 </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="/js/materialize.min.js"></script>
+<script type="text/javascript" src="/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript" >
         $(document).ready(function () {
+            $("img.lazy").lazyload({
+                skip_invisible : true
+            });
             if ($("#slide-out").length) {
                 $('.button-collapse').sideNav({
                             menuWidth: 300, // Default is 240

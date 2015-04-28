@@ -9,7 +9,7 @@ layout: default
 <div class="container">
     <div class="row">
         <div class=" col s12 m6 l5 offset-l1 center-align">
-            <img class="responsive-img" src="{{ '/img/moi.png' | site.baseurl }}">
+            <img class="responsive-img lazy" data-original="{{ '/img/moi.png' }}" >
         </div>
         <div class="col s12 m6 l6">
             <p class="shades-text">
@@ -54,7 +54,7 @@ layout: default
         <div class="col s12 m6 l6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="img/pages/{{page.imgfront}}">
+                    <img class="activator lazy" data-original="img/pages/{{page.imgfront}}">
                 </div>
                 <div class="card-action">
                     <a class="btn disabled"><i class="mdi-action-toc left"></i>{{site.categories[page.categories].size}}&nbsp;</a>
