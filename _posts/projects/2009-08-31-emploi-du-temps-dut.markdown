@@ -5,6 +5,7 @@ date: 2009-08-31 00:00:00
 enddate: 20-09-15 00:00:00
 categories: projects university
 excerpt: Ce projet a été mené à bien pour le Département Réseau et Télécom d'Annecy.
+tags: php jquery
 ---
 
 **Introduction**

@@ -5,6 +5,30 @@ permalink: /projects/
 imgfront: projects.png
 n: 1
 categories: projects
+excerpt:
+    "
+    <ul class=\"firstp\">
+    <li>
+        <i class=\"mdi-action-android\"></i> Android development
+    </li>
+    <li>
+        <i class=\"mdi-action-account-child\"></i> Worked in agile / scrum
+    </li>
+    <li>
+        <i class=\"mdi-action-extension\"></i> Software architecture
+    </li>
+    <li>
+        <i class=\"mdi-action-dashboard\"></i> Front-end and <i class=\"mdi-action-dns\"></i> back-end experience
+    </li>
+    <li>
+        <i class=\"mdi-action-room\"></i> Geo application
+    </li>
+        <li>
+            <i class=\"mdi-editor-insert-emoticon\"></i> Work in fun !
+        </li>
+
+    <ul>
+        "
 ---
 {% assign mycategoryname = 'projects' %}
 {% assign mycategory = site.categories.projects %}
@@ -18,14 +42,14 @@ categories: projects
             <span class="ibadge category">{{subcategory}}</span>
             {% endif %}
             {% endfor %}
-            <a href="{{post.url | site.baseurl}}">{{ post.title }}</a>
+            <a href="{{post.url | site.baseurl}}">{{ post.title }} { {{ post.date | date: "%Y" }} }</a>
         </h5>
         <div>
             {% for subtags in post.tags %}
             <span class="ibadge itags">{{subtags}}</span>
             {% endfor %}
         </div>
-        <p class="section flow-text">
+        <p class="section flow-text firstp">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
         </p>
     </div>

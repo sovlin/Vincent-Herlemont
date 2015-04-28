@@ -3,6 +3,7 @@ layout: post
 title: "Amysta cloud billing and metering "
 date: 2011-7-10 00:00:00
 enddate: 2011-08-14 00:00:00
+time: "5 mouths"
 categories: professional_experience stage cdd
 role: "Developer/Analyst"
 includeExcerpt: true

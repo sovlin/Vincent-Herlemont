@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Imagina international (le stage)"
+title: "Analysis performances and testing"
 date: 2013-05-20 00:00:00
 enddate: 2013-08-30 00:00:00
+time: "3 mouths"
 categories: professional_experience stage
 role: "Developer/Analyst"
 includeExcerpt: true
 company: Imagina-international
 excerpt: 
-    "<i class=\"mdi-action-alarm-on\"></i> Test plateform , analysis  performences and automatic deployment
+    "<i class=\"mdi-action-alarm-on\"></i> Test platform, analysis performances and automatic deployment
     Compare solutions and documents. "
-tags: java angularjs casperjs sahi  yourkit
+tags: java angularjs nodejs casperjs sahi yourkit
 ---
 
 Imagina international : Entreprise spécialisée dans l'édition d'un ERP (ATEN).

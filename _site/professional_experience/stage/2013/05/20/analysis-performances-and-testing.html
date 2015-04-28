@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="alternate" hreflang="fr" />
-  <title>Continuous integration platform</title>
-  <meta name="description" content=" Implement  an  continuous integration Current hard to take care. Biggest JAVA ERP software. Steps : Problem analyse, comparison and selection of technologie...">
+  <title>Analysis performances and testing</title>
+  <meta name="description" content=" Test platform, analysis performances and automatic deployment Compare solutions and documents. ">
 
   <link type="text/css" rel="stylesheet" href="/css/main.css"  media="screen,projection"/>
-  <link rel="canonical" href="http://vincent-herlemont.github.io/professional_experience/alternance/2013/09/01/imagina-international-alternance.html">
+  <link rel="canonical" href="http://vincent-herlemont.github.io/professional_experience/stage/2013/05/20/analysis-performances-and-testing.html">
   <link rel="alternate" type="application/rss+xml" title="Vincent Herlemont" href="http://vincent-herlemont.github.io/feed.xml" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <link type="text/css" rel="stylesheet" href="/css/add.css"  media="screen,projection"/>
@@ -70,9 +70,9 @@
   </div>
   <div class="row">
     <div class="col s12 center-align">
-      <h3 class="thin" >Continuous integration platform</h3>
+      <h3 class="thin" >Analysis performances and testing</h3>
       <p>
-        Sep 1, 2013
+        May 20, 2013 -> Aug 30, 2013
         
         </p>
     </div>
@@ -80,13 +80,89 @@
     <div class="col s12 m10 l8 offset-l2 offset-m1">
       <p class="z-depth-1 excerpt">
         <i class="mdi-hardware-keyboard-arrow-right"></i>
-        <i class="mdi-av-repeat"></i> Implement  an  continuous integration Current hard to take care. Biggest JAVA ERP software. Steps : Problem analyse, comparison and selection of technologies, documentations, demonstrations, developments  and release.
+        <i class="mdi-action-alarm-on"></i> Test platform, analysis performances and automatic deployment Compare solutions and documents. 
       </p>
     </div>
     
   </div>
   <article class="article">
-    <p>Coming soon …</p>
+    <p>Imagina international : Entreprise spécialisée dans l’édition d’un ERP (ATEN).</p>
+
+<h3 id="analyse-performance">Analyse performance</h3>
+
+<p><strong>Problématique :</strong></p>
+
+<p>Tracer l’utilisation mémoire, tracer l’utilisation CPU. Temps d’exécution des méthodes. Compter le nombre d’invocations par méthode ainsi que leur temps d’exécution. 
+Définir des cas d’utilisation pour les développeurs.
+Définir les bonnes façons de coder / exemple : optimisation de code, comprendre les allocations mémoire  etc …</p>
+
+<p><strong>Outils testés et documentés :</strong></p>
+
+<ul>
+  <li>Jmeter</li>
+  <li>Visual VM+Jconsole</li>
+  <li>Jprofiler</li>
+  <li>Yourkit.</li>
+</ul>
+
+<p><strong>Mise en production :</strong></p>
+
+<ul>
+  <li>Yourkit.</li>
+</ul>
+
+<h3 id="plateforme-de-test">Plateforme de test</h3>
+
+<p><strong>Problématique Test Fonctionnel</strong></p>
+
+<p>Pouvoir créer des scénarios rapidement ; si assistés, c’est un plus. Les scénarios doivent se diviser en blocs d’actions et ainsi permettre de reconstituer de nouveaux scénarios grâce à ces blocs. 
+Exemple de bloc :  Connexion, Créer une fiche client, Rechercher une fiche client etc … 
+La solution doit également proposer un rapport détaillé de fin de test.</p>
+
+<p><strong>Problématique Test Performance</strong></p>
+
+<p>La solution de test choisie doit pouvoir déclencher en parallèle le même scénario avec des jeux de données différents (ou non). 
+Possibilité de décaler le lancement des scénarios permettant de simuler des cas d’utilisation réelle. Mesure globale des actions.</p>
+
+<p><strong>Outils testés et documentés ( R&amp;D ) :</strong></p>
+
+<ul>
+  <li>SoapUI</li>
+  <li>Casperjs </li>
+  <li>Sahi</li>
+</ul>
+
+<p><strong>Outil de mise en production :</strong></p>
+
+<ul>
+  <li>Sahi</li>
+</ul>
+
+<h3 id="outil-de-dploiement">Outil de déploiement</h3>
+
+<p>Cet outil a été créé entièrement en nodeJS avec le soutien des librairies expressjs et socket.io.
+L’interface utilisateur a été créée en utilisant la librairie angularjs. Le design a bénéficié de l’aide de la librairie pure css.</p>
+
+<p><strong>Fonctionnalités :</strong></p>
+
+<ul>
+  <li>Affichage de l’état (allumé / éteint) des instances</li>
+  <li>Affichage de l’état (allumé / éteint) des serveurs</li>
+  <li>Mise à jour de déploiement de l’instance </li>
+  <li>Affichage en temps réel des traces de debug données par les taches ant</li>
+  <li>Verrouillage d’une instance</li>
+  <li>Possibilité d’indiquer le nom de la personne travaillant sur l’instance</li>
+  <li>L’utilisateur peut indiquer le temps durant lequel l’instance est verrouillée.</li>
+  <li>Ce temps décrémentera jusqu’à déverrouillage de l’instance.</li>
+  <li>Téléchargement de l’instance compilée.</li>
+  <li>Accès interne / externe de l’instance.</li>
+  <li>Upload fichier HTML5</li>
+  <li>Consultation des fichiers</li>
+  <li>Téléchargement des fichiers</li>
+  <li>Suppression des fichiers</li>
+</ul>
+
+<p><img src="/img/pages/professional_experience/imagina-international-stage-outil_deploiment.jpg" alt="deploiment" /></p>
 
   </article>
 

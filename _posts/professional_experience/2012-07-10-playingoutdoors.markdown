@@ -3,6 +3,7 @@ layout: post
 title: "Playing out doors (voyage en angleterre)"
 date: 2012-7-10 00:00:00
 enddate: 2012-08-14 00:00:00
+time: "1 mouths"
 categories: professional_experience voluntary
 role: "Moniteur/Helper"
 company: Playingoutdoors

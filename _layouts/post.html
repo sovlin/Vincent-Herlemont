@@ -10,7 +10,7 @@ layout: default
     <div class="col s12 center-align">
       <h3 class="thin" >{{ page.title }}</h3>
       <p>
-        {{ page.date | date: "%b %-d, %Y" }}
+        {{ page.date | date: "%b %-d, %Y" }} -> {{ page.enddate | date: "%b %-d, %Y" }}
         {% if page.author %}
           • {{ page.author }}
         {% endif %}
