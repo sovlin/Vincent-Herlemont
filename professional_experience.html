@@ -7,25 +7,25 @@ n: 1
 categories: professional_experience
 excerpt:
     "
-<ul>
-    <li>
-        <i class=\"mdi-av-repeat\"></i> Continuous integration
-    </li>
-    <li>
-        <i class=\"mdi-file-cloud\"></i> Worked in the cloud company
-    </li>
-    <li>
-        <i class=\"mdi-communication-business\"></i> Analyst Developer on the ERP editor company
-    </li>
-    <li>
-        <i class=\"mdi-action-dashboard\"></i> Front-end and <i class=\"mdi-action-dns\"></i> back end experience
-    </li>
-    <li>
-        <i class=\"mdi-action-language\"></i> Vounteering for supervise children in England
-    </li>
-    <li>
-        <i class=\"mdi-action-alarm-on\"></i> Benchmark on large java web application
-    </li>
+    <ul class=\"firstp\">
+        <li>
+            <i class=\"mdi-av-repeat\"></i> Continuous integration
+        </li>
+        <li>
+            <i class=\"mdi-file-cloud\"></i> Worked in the cloud company
+        </li>
+        <li>
+            <i class=\"mdi-communication-business\"></i> Analyst Developer on the ERP editor company
+        </li>
+        <li>
+            <i class=\"mdi-action-dashboard\"></i> Front-end and <i class=\"mdi-action-dns\"></i> back end experience
+        </li>
+        <li>
+            <i class=\"mdi-action-alarm-on\"></i> Benchmark on large java web application
+        </li>
+        <li>
+            <i class=\"mdi-action-language\"></i> Volunteering for supervise children in England
+        </li>
     <ul>
     "
 ---
@@ -34,7 +34,7 @@ excerpt:
 <div class="container">
 {% for post in mycategory %}
     <div class="divider"></div>
-    <div class="section flow-text">
+    <div>
         <h5>
             {% for subcategory in post.categories %}
                 {% if subcategory != mycategoryname %}
@@ -48,9 +48,10 @@ excerpt:
                     <span class="ibadge itags">{{subtags}}</span>
                 {% endfor %}
             </div>
-            <p>
+            <p class="section flow-text endp">
                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
             </p>
+            <a class="disabled companybutton waves-effect btn-flat"><i class="mdi-communication-business"></i> {{post.company}}</a>
     </div>
 {% endfor %}
 </div>

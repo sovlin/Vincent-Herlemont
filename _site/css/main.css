@@ -8027,17 +8027,20 @@ span.badge.inew:after, .inew.ibadge:after, .ibadge.category:after, .ibadge.itags
   background-color: #80cbc4; }
 
 .ibadge.itags {
+  font-size: large;
   background-color: rosybrown; }
 
-.card .card-action {
-  border-top: none; }
-  .card .card-action a {
-    color: white;
-    margin-right: 0; }
-.card .btn.disabled, .card .disabled.btn-large {
-  color: #ef5350;
-  background-color: #e3f2fd;
-  padding: 0px 15px 5px 15px; }
+.card {
+  overflow: hidden; }
+  .card .card-action {
+    border-top: none; }
+    .card .card-action a {
+      color: white;
+      margin-right: 0; }
+  .card .btn.disabled, .card .disabled.btn-large {
+    color: #ef5350;
+    background-color: #e3f2fd;
+    padding: 0px 15px 5px 15px; }
 
 .toshift {
   padding-left: 300px; }
@@ -8064,6 +8067,21 @@ span.badge.inew:after, .inew.ibadge:after, .ibadge.category:after, .ibadge.itags
   font-size: xx-large;
   color: #01579b; }
 
+.firstup {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
 .firstp {
   -webkit-margin-before: 0px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  padding: 0px 0px 0px 0px; }
+
+.endp {
+  -webkit-margin-after: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0px 0px 0px; }
+
+.companybutton {
+  margin-bottom: 10px; }

@@ -4,18 +4,20 @@
     <nav>
       <div class="nav-wrapper">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-        <a href="{{ site.baseurl }}/" class="brand-logo">&nbsp;&nbsp; About me :</a>
-        <ul class="right hide-on-med-and-down">
+        <!-- <a href="{{ site.baseurl }}/" class="brand-logo center">&nbsp;&nbsp;  About me</a> -->
+        <ul class="center">
+          <li>
+            <a href="{{ site.baseurl }}/" class="page-link">
+              About me
+            </a>
+          </li>
           {% for page in pagessort%}
             {% if page.title %}
-              <!--
               <li>
                 <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
                   {{ page.title }}
-                  {{ page.test }}
                 </a>
               </li>
-              -->
             {% endif %}
           {% endfor %}
         </ul>

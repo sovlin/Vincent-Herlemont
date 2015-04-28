@@ -6,8 +6,9 @@ enddate: 2013-08-30 00:00:00
 categories: professional_experience stage
 role: "Developer/Analyst"
 includeExcerpt: true
+company: Imagina-international
 excerpt: 
-    "Test plateform , analysis  performences and automatic deployment
+    "<i class=\"mdi-action-alarm-on\"></i> Test plateform , analysis  performences and automatic deployment
     Compare solutions and documents. "
 tags: java angularjs casperjs sahi  yourkit
 ---

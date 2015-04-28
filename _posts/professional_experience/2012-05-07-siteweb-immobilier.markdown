@@ -6,6 +6,7 @@ enddate: 2012-09-01 00:00:00
 categories: professional_experience stage cdd
 role: "Developer/Analyst"
 excerpt_separator: <!--more-->
+company: SSYB
 tags: php javascript mysql redbean
 ---
 

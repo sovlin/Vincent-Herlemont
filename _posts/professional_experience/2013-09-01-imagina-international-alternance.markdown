@@ -6,8 +6,9 @@ enddate: 2014-09-01 00:00:00
 categories: professional_experience alternance
 role: "Developer/Analyst"
 includeExcerpt: true
+company: Imagina-international
 excerpt: 
-    "Implement  an  continuous integration
+    "<i class=\"mdi-av-repeat\"></i> Implement  an  continuous integration
     Current hard to take care. Biggest JAVA ERP software.
     Steps : Problem analyse, comparison and selection of technologies,
     documentations, demonstrations, developments  and release."

@@ -69,11 +69,13 @@ span.badge.inew:after {
   @extend .inew;
 }
 .ibadge.itags{
+  font-size: large;
   background-color: rosybrown;
 }
 
 .card {
   @extend .card;
+  overflow:hidden;
   .card-action{
     border-top: none;
     a{
@@ -120,8 +122,22 @@ span.badge.inew:after {
     @extend .responsive-img;
   }
 }
-
+.firstup{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
 .firstp{
   -webkit-margin-before: 0px;
   margin-top: 0px;
+  padding: 0px 0px 0px 0px;
+}
+.endp{
+  -webkit-margin-after: 0px;
+  margin-bottom: 0px;
+  padding: 0px 0px 0px 0px;
+}
+.companybutton{
+  margin-bottom: 10px;
 }

@@ -10,22 +10,23 @@ categories: projects
 {% assign mycategory = site.categories.projects %}
 <div class="container">
     {% for post in mycategory %}
+    <div class="divider"></div>
     <div>
-        {{categories}}
-        {% for subcategory in post.categories %}
-        {% if subcategory != mycategoryname %}
-        <span class="ibadge category">{{subcategory}}</span>
-        {% endif %}
-        {% endfor %}<a href="{{post.url | site.baseurl}}">{{ post.title }}</a>
-    </div>
-    <div>
-        {% for subtags in post.tags %}
-        <span class="ibadge itags">{{subtags}}</span>
-        {% endfor %}
-    </div>
-    <div>
-        <p>
-            {{ post.excerpt }}
+        <h5>
+            {% for subcategory in post.categories %}
+            {% if subcategory != mycategoryname %}
+            <span class="ibadge category">{{subcategory}}</span>
+            {% endif %}
+            {% endfor %}
+            <a href="{{post.url | site.baseurl}}">{{ post.title }}</a>
+        </h5>
+        <div>
+            {% for subtags in post.tags %}
+            <span class="ibadge itags">{{subtags}}</span>
+            {% endfor %}
+        </div>
+        <p class="section flow-text">
+            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
         </p>
     </div>
     {% endfor %}
