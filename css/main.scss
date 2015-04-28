@@ -48,17 +48,25 @@
   @extend span.badge;
   position: inherit;
 }
-.category {
-  @extend .new;
-  content: none;
-}
-span.badge.new:after {
+span.badge.inew:after {
   @extend span.badge.new:after;
   content: none;
 }
-
+.inew {
+  @extend .new;
+  content: none;
+}
+.category{
+  @extend .inew;
+}
+.ibadge.category{
+  font-weight: 400;
+  font-size: x-large;
+  border-radius: 5px;
+  background-color: #80cbc4;
+}
 .itags{
-  @extend .category;
+  @extend .inew;
 }
 .ibadge.itags{
   background-color: rosybrown;
@@ -111,4 +119,9 @@ span.badge.new:after {
   img{
     @extend .responsive-img;
   }
+}
+
+.firstp{
+  -webkit-margin-before: 0px;
+  margin-top: 0px;
 }

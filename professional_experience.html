@@ -5,28 +5,52 @@ permalink: /professional_experience/
 imgfront: professional_experience.png
 n: 1
 categories: professional_experience
+excerpt:
+    "
+<ul>
+    <li>
+        <i class=\"mdi-av-repeat\"></i> Continuous integration
+    </li>
+    <li>
+        <i class=\"mdi-file-cloud\"></i> Worked in the cloud company
+    </li>
+    <li>
+        <i class=\"mdi-communication-business\"></i> Analyst Developer on the ERP editor company
+    </li>
+    <li>
+        <i class=\"mdi-action-dashboard\"></i> Front-end and <i class=\"mdi-action-dns\"></i> back end experience
+    </li>
+    <li>
+        <i class=\"mdi-action-language\"></i> Vounteering for supervise children in England
+    </li>
+    <li>
+        <i class=\"mdi-action-alarm-on\"></i> Benchmark on large java web application
+    </li>
+    <ul>
+    "
 ---
 {% assign mycategoryname = 'professional_experience' %}
 {% assign mycategory = site.categories.professional_experience %}
 <div class="container">
 {% for post in mycategory %}
-    <div>
-        {{categories}}
-        {% for subcategory in post.categories %}
-            {% if subcategory != mycategoryname %}
-                <span class="ibadge category">{{subcategory}}</span>
-            {% endif %}
-        {% endfor %}<a href="{{post.url | site.baseurl}}">{{ post.title }}</a>
-    </div>
-    <div>
-        {% for subtags in post.tags %}
-            <span class="ibadge itags">{{subtags}}</span>
-        {% endfor %}
-    </div>
-    <div>
-        <p>
-            {{ post.excerpt }}
-        </p>
+    <div class="divider"></div>
+    <div class="section flow-text">
+        <h5>
+            {% for subcategory in post.categories %}
+                {% if subcategory != mycategoryname %}
+                    <span class="ibadge category">{{subcategory}}</span>
+                {% endif %}
+            {% endfor %}
+            <a href="{{post.url | site.baseurl}}">{{ post.title }}</a>
+            </h5>
+            <div>
+                {% for subtags in post.tags %}
+                    <span class="ibadge itags">{{subtags}}</span>
+                {% endfor %}
+            </div>
+            <p>
+                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+            </p>
     </div>
 {% endfor %}
 </div>

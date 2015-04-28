@@ -10,9 +10,17 @@ layout: default
     <div class="row">
         <div class=" col s12 m6 l5 offset-l1 center-align">
             <img class="responsive-img lazy" data-original="{{ '/img/moi.png' }}" >
+            <p>
+                The best way to reach me is by email
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </p>
+
+            <p>
+                <a class="btn red" href="#!">Download CV</a>
+            </p>
         </div>
         <div class="col s12 m6 l6">
-            <p class="shades-text">
+            <p class="firstp">
                 Born at Annecy and raised in the south of France.
                 I've make my degrees in math and computer science at the University of Grenoble.
             </p>
@@ -36,21 +44,11 @@ layout: default
         </div>
     </div>
 </div>
-<div class="container center-align">
-    <p>
-        The best way to reach me is by email
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-    </p>
-
-    <p>
-        <a class="btn red" href="#!">Download CV</a>
-    </p>
-</div>
 <div class="row">
     <div class="col s12 m12 l2"><p class="right-align"></p></div>
     <div class="col s12 m12 l8">
         {% for page in site.pages %}
-        {% if page.title && page.imgfront %}
+        {% if page.title  %}
         <div class="col s12 m6 l6">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -58,13 +56,16 @@ layout: default
                 </div>
                 <div class="card-action">
                     <a class="btn disabled"><i class="mdi-action-toc left"></i>{{site.categories[page.categories].size}}&nbsp;</a>
-                    <a href="{{ page.permalink | site.baseurl }}"
-                       class="btn waves-effect waves-light light-blue">Open</a>
+                    <a href="{{ page.permalink }}"
+                       class="btn waves-effect waves-light light-blue">open</a>
                 </div>
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">{{ page.title | capitalize }} <i
                             class="mdi-navigation-close right"></i></span>
-                    <ul class="tags"><li><a>{{site.categories[page.categories].size}}</a></li></ul>
+                    <p>
+                        {{page.excerpt}}
+                    </p>
+                    <a href="{{ page.permalink }}" class="btn waves-effect waves-light light-blue">open</a>
                 </div>
             </div>
         </div>

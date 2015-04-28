@@ -25,7 +25,7 @@
     <nav>
       <div class="nav-wrapper">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-        <a href="/" class="brand-logo">&nbsp;&nbsp; Lab & web</a>
+        <a href="/" class="brand-logo">&nbsp;&nbsp; About me :</a>
         <ul class="right hide-on-med-and-down">
           
             
@@ -56,17 +56,6 @@
               -->
             
           
-            
-              <!--
-              <li>
-                <a class="page-link" href="/technology_watch/">
-                  Technology watch
-                  
-                </a>
-              </li>
-              -->
-            
-          
         </ul>
       </div>
     </nav>
@@ -85,9 +74,17 @@
     <div class="row">
         <div class=" col s12 m6 l5 offset-l1 center-align">
             <img class="responsive-img lazy" data-original="/img/moi.png" >
+            <p>
+                The best way to reach me is by email
+                <a href="mailto:vincentherl@live.fr">vincentherl@live.fr</a>
+            </p>
+
+            <p>
+                <a class="btn red" href="#!">Download CV</a>
+            </p>
         </div>
         <div class="col s12 m6 l6">
-            <p class="shades-text">
+            <p class="firstp">
                 Born at Annecy and raised in the south of France.
                 I've make my degrees in math and computer science at the University of Grenoble.
             </p>
@@ -111,16 +108,6 @@
         </div>
     </div>
 </div>
-<div class="container center-align">
-    <p>
-        The best way to reach me is by email
-        <a href="mailto:vincentherl@live.fr">vincentherl@live.fr</a>
-    </p>
-
-    <p>
-        <a class="btn red" href="#!">Download CV</a>
-    </p>
-</div>
 <div class="row">
     <div class="col s12 m12 l2"><p class="right-align"></p></div>
     <div class="col s12 m12 l8">
@@ -140,12 +127,15 @@
                 <div class="card-action">
                     <a class="btn disabled"><i class="mdi-action-toc left"></i>5&nbsp;</a>
                     <a href="/professional_experience/"
-                       class="btn waves-effect waves-light light-blue">Open</a>
+                       class="btn waves-effect waves-light light-blue">open</a>
                 </div>
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Professional experience <i
                             class="mdi-navigation-close right"></i></span>
-                    <ul class="tags"><li><a>5</a></li></ul>
+                    <p>
+                         <ul> <li> <i class="mdi-av-repeat"></i> Continuous integration </li> <li> <i class="mdi-file-cloud"></i> Worked in the cloud company </li> <li> <i class="mdi-communication-business"></i> Analyst Developer on the ERP editor company </li> <li> <i class="mdi-action-dashboard"></i> Front-end and <i class="mdi-action-dns"></i> back end experience </li> <li> <i class="mdi-action-language"></i> Vounteering for supervise children in England </li> <li> <i class="mdi-action-alarm-on"></i> Benchmark on large java web application </li> <ul> 
+                    </p>
+                    <a href="/professional_experience/" class="btn waves-effect waves-light light-blue">open</a>
                 </div>
             </div>
         </div>
@@ -160,32 +150,15 @@
                 <div class="card-action">
                     <a class="btn disabled"><i class="mdi-action-toc left"></i>4&nbsp;</a>
                     <a href="/projects/"
-                       class="btn waves-effect waves-light light-blue">Open</a>
+                       class="btn waves-effect waves-light light-blue">open</a>
                 </div>
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Projects <i
                             class="mdi-navigation-close right"></i></span>
-                    <ul class="tags"><li><a>4</a></li></ul>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <div class="col s12 m6 l6">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator lazy" data-original="img/pages/technology_watch.png">
-                </div>
-                <div class="card-action">
-                    <a class="btn disabled"><i class="mdi-action-toc left"></i>&nbsp;</a>
-                    <a href="/technology_watch/"
-                       class="btn waves-effect waves-light light-blue">Open</a>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Technology watch <i
-                            class="mdi-navigation-close right"></i></span>
-                    <ul class="tags"><li><a></a></li></ul>
+                    <p>
+                        
+                    </p>
+                    <a href="/projects/" class="btn waves-effect waves-light light-blue">open</a>
                 </div>
             </div>
         </div>
@@ -227,11 +200,13 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="/js/materialize.min.js"></script>
 <script type="text/javascript" src="/js/jquery.lazyload.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
 <script type="text/javascript" >
         $(document).ready(function () {
-            $("img.lazy").lazyload({
-                skip_invisible : true
-            });
+            $("img.lazy").lazyload();
+            if ($(".datatable").length) {
+
+            }
             if ($("#slide-out").length) {
                 $('.button-collapse').sideNav({
                             menuWidth: 300, // Default is 240
