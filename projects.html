@@ -44,7 +44,7 @@ excerpt:
             <span class="ibadge itags">{{subtags}}</span>
             {% endfor %}
         </div>
-        <p class="section flow-text firstp">
+        <p class="section flow-text firstp endp">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
         </p>
         {% for subcategory in post.categories %}
