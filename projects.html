@@ -37,11 +37,6 @@ excerpt:
     <div class="divider"></div>
     <div>
         <h5>
-            {% for subcategory in post.categories %}
-            {% if subcategory != mycategoryname %}
-            <span class="ibadge category">{{subcategory}}</span>
-            {% endif %}
-            {% endfor %}
             <a href="{{post.url | site.baseurl}}">{{ post.title }} { {{ post.date | date: "%Y" }} }</a>
         </h5>
         <div>
@@ -52,6 +47,12 @@ excerpt:
         <p class="section flow-text firstp">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
         </p>
+        {% for subcategory in post.categories %}
+        {% if subcategory != mycategoryname %}
+        <a class="disabled companybutton waves-effect btn-flat"><i class="mdi-communication-business"></i> {{subcategory}}</a>
+        {% endif %}
+        {% endfor %}
+        Role : {{post.role}}
     </div>
     {% endfor %}
 </div>

@@ -51,7 +51,7 @@ excerpt:
             <p class="section flow-text endp">
                 {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
             </p>
-            <a class="disabled companybutton waves-effect btn-flat"><i class="mdi-communication-business"></i> {{post.company}}</a>
+            <a class="disabled companybutton waves-effect btn-flat"><i class="mdi-communication-business"></i> {{post.company}}</a> Role : {{post.role}}
     </div>
 {% endfor %}
 </div>
