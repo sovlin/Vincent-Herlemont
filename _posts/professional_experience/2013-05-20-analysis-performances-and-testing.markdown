@@ -9,8 +9,8 @@ role: "Developer/Analyst"
 includeExcerpt: true
 company: Imagina-international
 excerpt: 
-    "<i class=\"mdi-action-alarm-on\"></i> Test platform, analysis performances and automatic deployment
-    Compare solutions and documents. "
+    "<i class=\"mdi-action-alarm-on\"></i> Test platform,
+     analysis performances and automatic deployment Compare solutions and documents."
 tags: java angularjs nodejs casperjs sahi yourkit
 ---
 

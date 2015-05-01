@@ -9,31 +9,30 @@ role: "Developer/Analyst"
 includeExcerpt: true
 company: Imagina-international
 excerpt: 
-    "<i class=\"mdi-av-repeat\"></i> Implement  an  continuous integration
-    Current hard to take care. Biggest JAVA ERP software.
-    Steps : Problem analyse, comparison and selection of technologies,
-    documentations, demonstrations, developments  and release."
+    "<i class=\"mdi-av-repeat\"></i> Implement an continuous integration Current
+     hard to take care. Biggest JAVA ERP software. Steps : Problem analyse, comparison 
+     and selection of technologies, documentations, demonstrations, developments and release."
 tags: maven nexus java teamcity sonarcube gradle
 ---
 
 ### Problematic
 
-The company Imagina-international need to reworking your development process.
+The company Imagina-international needs to rework the development process.
 
-**The current :**
+**Currently  :**
 
-- It's a ERP wrote in java, this is a large application ( 1,5 Million lines )
-- Nothing continuous integration 
-- Nothing automating test
-- Nothing libraries manager
+- It’s a ERP written in java, this is a large application ( 1,5 Million lines )
+- Any continuous integration 
+- Any automating test
+- Any libraries manager
 
 ### My mission
 
-Make a stud for the point presented before ( continuous integration, automating test, libraries manager ).
-All the technologies must of married with the current code of ERP application.
-Moreover once **impact with a developer practices** need to taking into consideration.
+Make a study for the point presented before ( continuous integration, automating test, libraries manager ).
+  All the technologies have to match with the current code of ERP application. 
+  Moreover,  **impact on a developer practices** needs to be taken into consideration.
 
-### Stud & Compare
+### Study & Compare
 
 - Maven ( Now Gradle was more efficient ! )
 - TeamCity
@@ -44,8 +43,8 @@ Moreover once **impact with a developer practices** need to taking into consider
 
 For each technology :
 
-- Documentation and compare whit similar technologies.
-- Setting up of news managements process for the development team.
+- Documentation and comparison with similar technologies.
+- Setting up of new management processes for the development team.
 - Install and deploy all the continuous integration.
 
 

@@ -7,7 +7,7 @@ categories: projects university
 role: "Software/Architect"
 includeExcerpt: true
 excerpt:
-    "Software architecture of PCET application (Plans Climat-Énergie Territoriaux) 
+    "Software architecture of PCET application (Plans Climat-Énergie Territoriaux)
      Selection of technologies and design of software.
      Communication with a team of fifteen students."
 tags: angularjs php

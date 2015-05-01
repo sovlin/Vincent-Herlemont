@@ -4,9 +4,8 @@ title: "Site web pour l'immobilier"
 date: 2012-05-07 00:00:00
 enddate: 2012-09-01 00:00:00
 time: "3 mouths"
-categories: professional_experience stage cdd
+categories: professional_experience internship cdd
 role: "Developer/Analyst"
-excerpt_separator: <!--more-->
 company: SSYB
 tags: php javascript mysql redbean
 ---
