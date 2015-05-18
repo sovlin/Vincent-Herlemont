@@ -1,0 +1,62 @@
+---
+layout: pageapp
+title: Technologies sand box
+permalink: /technosandbox/
+n: 0
+excerpt: ""
+---
+{% assign mycategoryname = 'projects' %}
+{% assign mycategory = site.categories.projects %}
+<div class="container">
+    <div class="row login">
+        <div class="input-field col s5">
+            <input id="username" type="text" >
+            <label for="username">Your Name</label>
+        </div>
+        <div class="input-field col s5">
+            <input id="password" type="password">
+            <label for="password">Password</label>
+        </div>
+        <div class="input-field col s2">
+            <a id="log" class="btn-floating waves-effect"><i class="mdi-image-flash-on"></i></a>
+        </div>
+    </div>
+    <div class="row logout hide">
+        <div class="input-field col s5 right-align">
+            <p>Your are connected </p>
+        </div>
+        <div class="input-field col s5">
+            <p id="currentUsername"></p>
+        </div>
+        <div class="input-field col s2">
+            <a id="out" class="btn-floating waves-effect red"><i class="mdi-image-flash-off"></i></a>
+        </div>
+    </div>
+    <div class="row logout">
+        <div class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="name" type="text" >
+                    <label for="name">Technology name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="url" type="text">
+                    <label for="url">Enter the main site web url</label>
+                </div>
+            </div>
+        </div>
+        <div class="input-field col s10">
+            <input id="image" type="text">
+            <label for="image">Url of the logo/image representing the technology</label>
+            <input type="file" id="imageUpload" class="hide">
+        </div>
+        <div class="align col s2">
+            <a id="addTechnology" class="btn waves-effect blue">Add technology</a>
+        </div>
+        <div id="imageDownload" class="input-field col s12">
+        </div>
+    </div>
+    <div id="contentTechnologies" class="row">
+
+    </div>
+</div>

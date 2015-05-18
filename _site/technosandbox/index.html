@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="alternate" hreflang="fr" />
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+  <title>Technologies sand box</title>
+  <meta name="description" content="">
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css"  media="screen,projection"/>
+  <link rel="canonical" href="http://vincent-herlemont.github.io/technosandbox/">
+  <link rel="alternate" type="application/rss+xml" title="Vincent Herlemont" href="http://vincent-herlemont.github.io/feed.xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link type="text/css" rel="stylesheet" href="/css/add.css"  media="screen,projection"/>
+</head>
+
+
+  <body>
+
+    
+<header>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <!-- <a href="/" class="brand-logo center">&nbsp;&nbsp;  About me</a> -->
+        <ul class="center">
+          <li>
+            <a href="/" class="page-link">
+              About me
+            </a>
+          </li>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <li>
+                <a class="page-link" href="/projects/">
+                  Projects
+                </a>
+              </li>
+            
+          
+            
+              <li>
+                <a class="page-link" href="/professional_experience/">
+                  Professional experience
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+      <div>
+        <div class="container">
+  <div class="center-align">
+    <h2 class="thin">Technologies sand box</h2>
+  </div>
+</div>
+<div>
+  
+
+<div class="container">
+    <div class="row login">
+        <div class="input-field col s5">
+            <input id="username" type="text" >
+            <label for="username">Your Name</label>
+        </div>
+        <div class="input-field col s5">
+            <input id="password" type="password">
+            <label for="password">Password</label>
+        </div>
+        <div class="input-field col s2">
+            <a id="log" class="btn-floating waves-effect"><i class="mdi-image-flash-on"></i></a>
+        </div>
+    </div>
+    <div class="row logout hide">
+        <div class="input-field col s5 right-align">
+            <p>Your are connected </p>
+        </div>
+        <div class="input-field col s5">
+            <p id="currentUsername"></p>
+        </div>
+        <div class="input-field col s2">
+            <a id="out" class="btn-floating waves-effect red"><i class="mdi-image-flash-off"></i></a>
+        </div>
+    </div>
+    <div class="row logout">
+        <div class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="name" type="text" >
+                    <label for="name">Technology name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="url" type="text">
+                    <label for="url">Enter the main site web url</label>
+                </div>
+            </div>
+        </div>
+        <div class="input-field col s10">
+            <input id="image" type="text">
+            <label for="image">Url of the logo/image representing the technology</label>
+            <input type="file" id="imageUpload" class="hide">
+        </div>
+        <div class="align col s2">
+            <a id="addTechnology" class="btn waves-effect blue">Add technology</a>
+        </div>
+        <div id="imageDownload" class="input-field col s12">
+        </div>
+    </div>
+    <div id="contentTechnologies" class="row">
+
+    </div>
+</div>
+
+</div>
+
+      </div>
+    </main>
+
+    <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Vincent Herlemont</h5>
+        <p class="grey-text text-lighten-4">This is my CV, and my amazing life on earth !
+</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          
+          <li><a class="github-button" href="https://github.com/vincent-herlemont" data-style="mega" aria-label="Vincent Herlemont">Vincent Herlemont</a></li>
+          
+          
+          <li><a class="grey-text text-lighten-3" href="/technosandbox">Technologies sand box</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2015 Copyright
+       <a class="grey-text text-lighten-4 right" href="mailto:vincentherl@live.fr"> vincentherl@live.fr</a>
+    </div>
+  </div>
+</footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/js/materialize.min.js"></script>
+<script type="text/javascript" src="/js/jquery.lazyload.min.js"></script>
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript" >
+        $(document).ready(function () {
+            $("img.lazy").lazyload();
+            if ($(".datatable").length) {
+
+            }
+            if ($("#slide-out").length) {
+                $('.button-collapse').sideNav({
+                            menuWidth: 300, // Default is 240
+                            edge: 'left', // Choose the horizontal origin
+                            closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                        }
+                );
+                $("header, main, footer").toggleClass("toshift");
+
+                // Cache selectors
+                var lastId,
+                        topMenu = $("#slide-out"),
+                        topMenuHeight = 200,
+                // All list items
+                        menuItems = topMenu.find("a"),
+                // Anchors corresponding to menu items
+                        scrollItems = menuItems.map(function(){
+                            var item = $($(this).attr("href"));
+                            if (item.length) { return item; }
+                        });
+
+                // Bind click handler to menu items
+                // so we can get a fancy scroll animation
+                menuItems.click(function(e){
+                    var href = $(this).attr("href"),
+                            offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+                    $('html, body').stop().animate({
+                        scrollTop: offsetTop
+                    }, 300);
+                    e.preventDefault();
+                });
+
+                // Bind to scroll
+                $(window).scroll(function(){
+                    // Get container scroll position
+                    var fromTop = $(this).scrollTop()+topMenuHeight;
+
+                    // Get id of current scroll item
+                    var cur = scrollItems.map(function(){
+                        if ($(this).offset().top < fromTop)
+                            return this;
+                    });
+                    // Get the id of the current element
+                    cur = cur[cur.length-1];
+                    var id = cur && cur.length ? cur[0].id : "";
+
+                    if (lastId !== id) {
+                        lastId = id;
+                        // Set/remove active class
+                        menuItems
+                                .parent().removeClass("active")
+                                .end().filter("[href=#"+id+"]").parent().addClass("active");
+                    }
+                });
+
+            }else{
+                $('.button-collapse').addClass("hide")
+            }
+        });
+        //read https://jsfiddle.net/mekwall/up4nu/
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-62425000-1', 'auto');
+        ga('send', 'pageview');
+
+</script>
+
+
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/cloudinary/canvas-to-blob.min.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.fileupload.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.fileupload-process.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.fileupload-validate.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="/js/cloudinary/load-image.min.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.cloudinary.js"></script>
+<script type="text/javascript">
+    Parse.initialize("9RH6i4KuOHOYhX861HYsyOePgB528dKXM47zs74A", "dXiT7bOLdyEnvEmtz3CEMSAvJCFsJX6V4WWaZy5r");
+    $.cloudinary.config({ cloud_name: 'ddln0sivu', api_key: '341835889222374'})
+    $(document).ready(function () {
+
+        function checkLogin(){
+            var currentUser = Parse.User.current();
+            if (currentUser) {
+                $(".login").addClass("hide");
+                $(".logout").removeClass("hide");
+                $("#currentUsername").text(currentUser.get('username'));
+            } else {
+                $(".logout").addClass("hide");
+                $(".login").removeClass("hide");
+            }
+        }
+
+        checkLogin();
+
+        $("#out").click(function(){
+            Parse.User.logOut();
+            checkLogin();
+        });
+
+        $("#log").click(function() {
+            Parse.User.logIn($("#username").val(), $("#password").val(), {
+                success: function(user) {
+                    checkLogin();
+                },
+                error: function(user, error) {
+                    var user = new Parse.User();
+                    user.set("username", $("#username").val());
+                    user.set("password", $("#password").val());
+                    user.signUp(null, {
+                        success: function(user) {
+                            checkLogin();
+                        },
+                        error: function(user, error) {
+                            alert("Error: " + error.code + " " + error.message);
+                            checkLogin();
+                        }
+                    });
+                }
+            });
+        });
+
+        function checkURLimg(callback){
+            var imgval = $("#image").val();
+            if(imgval!=""){
+                var c=$.cloudinary.image(imgval,
+                        {
+                            type: "fetch",
+                            width: 700,
+                            height: 250,
+                            crop: "pad",
+                            fetch_format: "png",
+                            border: { width: 4, color: '#ffffff' }
+                        });
+                $("#imageDownload").html(c);
+            }
+            if(callback!=undefined){
+                callback();
+            }
+        }
+        $("#image").bind( "click change keyup", function() {
+            checkURLimg();
+        });
+
+        function convertImgToBase64(url, callback, outputFormat){
+            var canvas = document.createElement('CANVAS');
+            var ctx = canvas.getContext('2d');
+            var img = new Image;
+            img.crossOrigin = 'Anonymous';
+            img.onload = function(){
+                canvas.height = img.height;
+                canvas.width = img.width;
+                ctx.drawImage(img,0,0);
+                var dataURL = canvas.toDataURL(outputFormat || 'image/png');
+                callback.call(this, dataURL);
+                // Clean up
+                canvas = null;
+            };
+            img.src = url;
+        }
+
+        $("#addTechnology").click(function(){
+            if($("#name").val()!=""){
+                checkURLimg(function(){
+                    var src = $("#imageDownload").find("img")[0].src
+                    convertImgToBase64(src, function(base64Img){
+                        //console.log(base64Img);
+                        var Technology = Parse.Object.extend("Technology");
+                        var privateTechnology = new Technology();
+                        privateTechnology.set("name",$("#name").val());
+                        privateTechnology.set("url",$("#url").val());
+                        var imagefile = new Parse.File($("#name").val().toLowerCase()+".png", { base64: base64Img });
+                        privateTechnology.set("img",imagefile);
+                        var postACL = new Parse.ACL(Parse.User.current());
+                        postACL.setPublicReadAccess(true);
+                        privateTechnology.setACL(postACL);
+                        privateTechnology.save(null, {
+                            success: function(gameScore) {
+                                // Execute any logic that should take place after the object is saved.
+                                //alert('New object created with objectId: ' + gameScore.id);
+                                findTechnologies();
+                            },
+                            error: function(gameScore, error) {
+                                // Execute any logic that should take place if the save fails.
+                                // error is a Parse.Error with an error code and message.
+                                alert('Failed to create new object, with error code: ' + error.message);
+                            }
+                        });
+                    });
+                });
+            }
+        });
+
+        function findTechnologies(){
+            var Technology = Parse.Object.extend("Technology");
+            var queryTechnology = new Parse.Query(Technology);
+            queryTechnology.find({
+                success: function(results) {
+                    // alert("Successfully retrieved " + results.length + " scores.");
+                    // Do something with the returned Parse.Object values
+                    var contentTechnologies = $("#contentTechnologies");
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var imageTechnology = object.get("img");
+                        var strVar="";
+                        strVar += "<div class=\"col s12 m6 l6\">";
+                        strVar += "    <div class=\"card\">";
+                        strVar += "     <div class=\"card-image waves-effect waves-block waves-light\">";
+                        strVar += "         <img class=\"activator lazy\" data-original=\""+imageTechnology.url()+"\">";
+                        strVar += "     <\/div>";
+                        strVar += "     <div class=\"card-action\">";
+                        strVar += "         <a href=\""+object.get("url")+"\" target=\"_blank\" class=\"btn waves-effect waves-light light-blue\">open<\/a>";
+                        strVar += "     <\/div>";
+                        strVar += "     <div class=\"card-reveal\">";
+                        strVar += "         <span class=\"card-title grey-text text-darken-4\">"+object.get("name")+"<i";
+                        strVar += "           class=\"mdi-navigation-close right\"><\/i><\/span>";
+                        strVar += "                    <a href=\""+object.get("url")+"\" target=\"_blank\" class=\"btn waves-effect waves-light light-blue\">open<\/a>";
+                        strVar += "           <\/div>";
+                        strVar += "    <\/div>";
+                        strVar += "<\/div>";
+                        $(contentTechnologies).append(strVar);
+                        console.log(contentTechnologies);
+                    }
+                    $("img.lazy").lazyload();
+                },
+                error: function(error) {
+                    alert("Error: " + error.code + " " + error.message);
+                }
+            });
+        }
+        findTechnologies();
+    });
+</script>
+  </body>
+
+</html>

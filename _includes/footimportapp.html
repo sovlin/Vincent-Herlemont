@@ -1,0 +1,166 @@
+<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/cloudinary/canvas-to-blob.min.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.fileupload.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.fileupload-process.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.fileupload-validate.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.iframe-transport.js"></script>
+<script type="text/javascript" src="/js/cloudinary/load-image.min.js"></script>
+<script type="text/javascript" src="/js/cloudinary/jquery.cloudinary.js"></script>
+<script type="text/javascript">
+    Parse.initialize("9RH6i4KuOHOYhX861HYsyOePgB528dKXM47zs74A", "dXiT7bOLdyEnvEmtz3CEMSAvJCFsJX6V4WWaZy5r");
+    $.cloudinary.config({ cloud_name: 'ddln0sivu', api_key: '341835889222374'})
+    $(document).ready(function () {
+
+        function checkLogin(){
+            var currentUser = Parse.User.current();
+            if (currentUser) {
+                $(".login").addClass("hide");
+                $(".logout").removeClass("hide");
+                $("#currentUsername").text(currentUser.get('username'));
+            } else {
+                $(".logout").addClass("hide");
+                $(".login").removeClass("hide");
+            }
+        }
+
+        checkLogin();
+
+        $("#out").click(function(){
+            Parse.User.logOut();
+            checkLogin();
+        });
+
+        $("#log").click(function() {
+            Parse.User.logIn($("#username").val(), $("#password").val(), {
+                success: function(user) {
+                    checkLogin();
+                },
+                error: function(user, error) {
+                    var user = new Parse.User();
+                    user.set("username", $("#username").val());
+                    user.set("password", $("#password").val());
+                    user.signUp(null, {
+                        success: function(user) {
+                            checkLogin();
+                        },
+                        error: function(user, error) {
+                            alert("Error: " + error.code + " " + error.message);
+                            checkLogin();
+                        }
+                    });
+                }
+            });
+        });
+
+        function checkURLimg(callback){
+            var imgval = $("#image").val();
+            if(imgval!=""){
+                var c=$.cloudinary.image(imgval,
+                        {
+                            type: "fetch",
+                            width: 700,
+                            height: 250,
+                            crop: "pad",
+                            fetch_format: "png",
+                            border: { width: 4, color: '#ffffff' }
+                        });
+                $("#imageDownload").html(c);
+            }
+            if(callback!=undefined){
+                callback();
+            }
+        }
+        $("#image").bind( "click change keyup", function() {
+            checkURLimg();
+        });
+
+        function convertImgToBase64(url, callback, outputFormat){
+            var canvas = document.createElement('CANVAS');
+            var ctx = canvas.getContext('2d');
+            var img = new Image;
+            img.crossOrigin = 'Anonymous';
+            img.onload = function(){
+                canvas.height = img.height;
+                canvas.width = img.width;
+                ctx.drawImage(img,0,0);
+                var dataURL = canvas.toDataURL(outputFormat || 'image/png');
+                callback.call(this, dataURL);
+                // Clean up
+                canvas = null;
+            };
+            img.src = url;
+        }
+
+        $("#addTechnology").click(function(){
+            if($("#name").val()!=""){
+                checkURLimg(function(){
+                    var src = $("#imageDownload").find("img")[0].src
+                    convertImgToBase64(src, function(base64Img){
+                        //console.log(base64Img);
+                        var Technology = Parse.Object.extend("Technology");
+                        var privateTechnology = new Technology();
+                        privateTechnology.set("name",$("#name").val());
+                        privateTechnology.set("url",$("#url").val());
+                        var imagefile = new Parse.File($("#name").val().toLowerCase()+".png", { base64: base64Img });
+                        privateTechnology.set("img",imagefile);
+                        var postACL = new Parse.ACL(Parse.User.current());
+                        postACL.setPublicReadAccess(true);
+                        privateTechnology.setACL(postACL);
+                        privateTechnology.save(null, {
+                            success: function(gameScore) {
+                                // Execute any logic that should take place after the object is saved.
+                                //alert('New object created with objectId: ' + gameScore.id);
+                                findTechnologies();
+                            },
+                            error: function(gameScore, error) {
+                                // Execute any logic that should take place if the save fails.
+                                // error is a Parse.Error with an error code and message.
+                                alert('Failed to create new object, with error code: ' + error.message);
+                            }
+                        });
+                    });
+                });
+            }
+        });
+
+        function findTechnologies(){
+            var Technology = Parse.Object.extend("Technology");
+            var queryTechnology = new Parse.Query(Technology);
+            queryTechnology.find({
+                success: function(results) {
+                    // alert("Successfully retrieved " + results.length + " scores.");
+                    // Do something with the returned Parse.Object values
+                    var contentTechnologies = $("#contentTechnologies");
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var imageTechnology = object.get("img");
+                        var strVar="";
+                        strVar += "<div class=\"col s12 m6 l6\">";
+                        strVar += "    <div class=\"card\">";
+                        strVar += "     <div class=\"card-image waves-effect waves-block waves-light\">";
+                        strVar += "         <img class=\"activator lazy\" data-original=\""+imageTechnology.url()+"\">";
+                        strVar += "     <\/div>";
+                        strVar += "     <div class=\"card-action\">";
+                        strVar += "         <a href=\""+object.get("url")+"\" target=\"_blank\" class=\"btn waves-effect waves-light light-blue\">open<\/a>";
+                        strVar += "     <\/div>";
+                        strVar += "     <div class=\"card-reveal\">";
+                        strVar += "         <span class=\"card-title grey-text text-darken-4\">"+object.get("name")+"<i";
+                        strVar += "           class=\"mdi-navigation-close right\"><\/i><\/span>";
+                        strVar += "                    <a href=\""+object.get("url")+"\" target=\"_blank\" class=\"btn waves-effect waves-light light-blue\">open<\/a>";
+                        strVar += "           <\/div>";
+                        strVar += "    <\/div>";
+                        strVar += "<\/div>";
+                        $(contentTechnologies).append(strVar);
+                        console.log(contentTechnologies);
+                    }
+                    $("img.lazy").lazyload();
+                },
+                error: function(error) {
+                    alert("Error: " + error.code + " " + error.message);
+                }
+            });
+        }
+        findTechnologies();
+    });
+</script>
