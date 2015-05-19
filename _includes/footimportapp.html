@@ -127,6 +127,7 @@
         function findTechnologies(){
             var Technology = Parse.Object.extend("Technology");
             var queryTechnology = new Parse.Query(Technology);
+            $(contentTechnologies).html("");
             queryTechnology.find({
                 success: function(results) {
                     // alert("Successfully retrieved " + results.length + " scores.");
@@ -151,7 +152,7 @@
                         strVar += "           <\/div>";
                         strVar += "    <\/div>";
                         strVar += "<\/div>";
-                        $(contentTechnologies).append(strVar);
+                        $(contentTechnologies).prepend(strVar);
                         console.log(contentTechnologies);
                     }
                     $("img.lazy").lazyload();
