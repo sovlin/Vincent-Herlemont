@@ -1,11 +1,10 @@
 {% assign pagessort = site.pages | sort: 'n' %}
-<header>
-  <div class="navbar-fixed">
+<div class="navbar" id="navbar">
     <nav>
-      <div class="nav-wrapper">
+      <div class="menu">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         <!-- <a href="{{ site.baseurl }}/" class="brand-logo center">&nbsp;&nbsp;  About me</a> -->
-        <ul class="center">
+        <ul>
           <li>
             <a href="{{ site.baseurl }}/" class="page-link">
               About me
@@ -23,5 +22,17 @@
         </ul>
       </div>
     </nav>
-  </div>
-</header>
+
+    <div id="my-email">
+        <ul>
+            <li>
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://fr.linkedin.com/pub/vincent-herlemont/79/432/a39"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x25_fr_FR.png?locale=" width="160" height="25" border="0" alt="Voir le profil de Vincent Herlemont sur LinkedIn">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>

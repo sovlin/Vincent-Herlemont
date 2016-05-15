@@ -2,6 +2,7 @@
 <html>
 
   <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="alternate" hreflang="fr" />
@@ -12,24 +13,26 @@
   <title>Arboretum</title>
   <meta name="description" content="Le but du projet Pedestrian Urban Navigation est de permettre d’effectuer des requêtes sur les éléments de l’environnement (Points Of Interest) à partir d’un...">
 
-  <link type="text/css" rel="stylesheet" href="/css/main.css"  media="screen,projection"/>
   <link rel="canonical" href="http://52.22.87.214:4000/projects/university/2013/03/05/android-arboretum.html">
   <link rel="alternate" type="application/rss+xml" title="Vincent Herlemont" href="http://52.22.87.214:4000/feed.xml" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <link type="text/css" rel="stylesheet" href="/css/add.css"  media="screen,projection"/>
+  
+  <link title="google-font" href='https://fonts.googleapis.com/css?family=Lora|Quicksand:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://52.22.87.214:4000/css/main.css' rel='stylesheet' type='text/css'>
+
 </head>
 
 
   <body>
 
+  <div class="master">
     
-<header>
-  <div class="navbar-fixed">
+<div class="navbar" id="navbar">
     <nav>
-      <div class="nav-wrapper">
+      <div class="menu">
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         <!-- <a href="/" class="brand-logo center">&nbsp;&nbsp;  About me</a> -->
-        <ul class="center">
+        <ul>
           <li>
             <a href="/" class="page-link">
               About me
@@ -45,6 +48,12 @@
             
           
             
+              <li>
+                <a class="page-link" href="/professional_experience/">
+                  Professional experience
+                </a>
+              </li>
+            
           
             
               <li>
@@ -54,24 +63,28 @@
               </li>
             
           
-            
-              <li>
-                <a class="page-link" href="/professional_experience/">
-                  Professional experience
-                </a>
-              </li>
-            
-          
         </ul>
       </div>
     </nav>
-  </div>
-</header>
 
+    <div id="my-email">
+        <ul>
+            <li>
+                <a href="mailto:vincentherl@live.fr">vincentherl@live.fr</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://fr.linkedin.com/pub/vincent-herlemont/79/432/a39"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x25_fr_FR.png?locale=" width="160" height="25" border="0" alt="Voir le profil de Vincent Herlemont sur LinkedIn">
+                </a>
+            </li>
+        </ul>
+    </div>
 
-    <main>
-      <div>
-        <div class="container">
+</div>
+
+    <script type="text/javascript">
+        
+    </script>
+    <div class="container">
 
   <div>
 
@@ -97,117 +110,15 @@
 
 </div>
 
-      </div>
-    </main>
-
-    <footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Vincent Herlemont</h5>
-        <p class="grey-text text-lighten-4">This is my CV, and my amazing life on earth !
-</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          
-          <li><a class="github-button" href="https://github.com/vincent-herlemont" data-style="mega" aria-label="Vincent Herlemont">Vincent Herlemont</a></li>
-          
-          
-          <li><a class="grey-text text-lighten-3" href="/technosandbox"><i class="mdi-device-now-widgets"></i> Technologies sand box</a></li>
-        </ul>
-      </div>
-    </div>
   </div>
-  <div class="footer-copyright">
-    <div class="container">
-      © 2015 Copyright
-       <a class="grey-text text-lighten-4 right" href="mailto:vincentherl@live.fr"> vincentherl@live.fr</a>
-    </div>
-  </div>
-</footer>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="/js/materialize.min.js"></script>
-<script type="text/javascript" src="/js/jquery.lazyload.min.js"></script>
-<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-<script type="text/javascript" >
-        $(document).ready(function () {
-            $("img.lazy").lazyload();
-            if ($(".datatable").length) {
+    <div class="page-footer">
+    <a href="http://vincent-herlemont.github.io"> Vincent Herlemont </a>
+</div>
 
-            }
-            if ($("#slide-out").length) {
-                $('.button-collapse').sideNav({
-                            menuWidth: 300, // Default is 240
-                            edge: 'left', // Choose the horizontal origin
-                            closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
-                        }
-                );
-                $("header, main, footer").toggleClass("toshift");
 
-                // Cache selectors
-                var lastId,
-                        topMenu = $("#slide-out"),
-                        topMenuHeight = 200,
-                // All list items
-                        menuItems = topMenu.find("a"),
-                // Anchors corresponding to menu items
-                        scrollItems = menuItems.map(function(){
-                            var item = $($(this).attr("href"));
-                            if (item.length) { return item; }
-                        });
-
-                // Bind click handler to menu items
-                // so we can get a fancy scroll animation
-                menuItems.click(function(e){
-                    var href = $(this).attr("href"),
-                            offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-                    $('html, body').stop().animate({
-                        scrollTop: offsetTop
-                    }, 300);
-                    e.preventDefault();
-                });
-
-                // Bind to scroll
-                $(window).scroll(function(){
-                    // Get container scroll position
-                    var fromTop = $(this).scrollTop()+topMenuHeight;
-
-                    // Get id of current scroll item
-                    var cur = scrollItems.map(function(){
-                        if ($(this).offset().top < fromTop)
-                            return this;
-                    });
-                    // Get the id of the current element
-                    cur = cur[cur.length-1];
-                    var id = cur && cur.length ? cur[0].id : "";
-
-                    if (lastId !== id) {
-                        lastId = id;
-                        // Set/remove active class
-                        menuItems
-                                .parent().removeClass("active")
-                                .end().filter("[href=#"+id+"]").parent().addClass("active");
-                    }
-                });
-
-            }else{
-                $('.button-collapse').addClass("hide")
-            }
-        });
-        //read https://jsfiddle.net/mekwall/up4nu/
-
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-62425000-1', 'auto');
-        ga('send', 'pageview');
-
+    <script>
+    console.log("Welcome");
 </script>
-
 
   </body>
 

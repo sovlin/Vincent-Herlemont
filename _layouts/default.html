@@ -5,15 +5,15 @@
 
   <body>
 
+  <div class="master">
     {% include header.html %}
-
-    <main>
-      <div>
-        {{ content }}
-      </div>
-    </main>
-
+    <script type="text/javascript">
+        {% include js/luck.js %}
+    </script>
+    {{ content }}
+  </div>
     {% include footer.html %}
+
     {% include footimport.html %}
   </body>
 

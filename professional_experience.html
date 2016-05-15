@@ -6,52 +6,38 @@ imgfront: professional_experience.png
 n: 1
 categories: professional_experience
 excerpt:
-    "
-    <ul class=\"firstp\">
-        <li>
-            <i class=\"mdi-av-repeat\"></i> Continuous integration
-        </li>
-        <li>
-            <i class=\"mdi-file-cloud\"></i> Worked in the cloud company
-        </li>
-        <li>
-            <i class=\"mdi-communication-business\"></i> Analyst Developer on the ERP editor company
-        </li>
-        <li>
-            <i class=\"mdi-action-dashboard\"></i> Front-end and <i class=\"mdi-action-dns\"></i> back-end experience
-        </li>
-        <li>
-            <i class=\"mdi-action-alarm-on\"></i> Benchmark on large java web application
-        </li>
-        <li>
-            <i class=\"mdi-action-language\"></i> Volunteer for supervising children in England
-        </li>
-    <ul>
-    "
+    ""
 ---
 {% assign mycategoryname = 'professional_experience' %}
 {% assign mycategory = site.categories.professional_experience %}
-<div class="container">
+<section class="text">
 {% for post in mycategory %}
-    <div class="divider"></div>
-    <div>
-        <h5>
-            {% for subcategory in post.categories %}
-                {% if subcategory != mycategoryname %}
-                    <span class="ibadge category">{{subcategory}}</span>
-                {% endif %}
-            {% endfor %}
-            <a href="{{post.url | site.baseurl}}">{{ post.title }} &nbsp;{ {{post.time}} }</a>
-            </h5>
+    <article>
+        <header>
+                <h1>
+            <a href="{{post.url | site.baseurl}}">{{ post.title }} &nbsp;{ {{post.time}} }
+            </a>
+                </h1>
+                    {% for subcategory in post.categories %}
+                        {% if subcategory != mycategoryname %}
+                            {{subcategory}}
+                        {% endif %}
+                    {% endfor %}
             <div>
                 {% for subtags in post.tags %}
                     <span class="ibadge itags">{{subtags}}</span>
                 {% endfor %}
             </div>
-            <p class="section flow-text endp">
-                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-            </p>
+
+        </header>
+
+        <p class="section flow-text endp">
+            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        </p>
+
+        <footer>
             <a class="disabled companybutton waves-effect btn-flat"><i class="mdi-communication-business"></i> {{post.company}}</a> Role : {{post.role}}
-    </div>
+        </footer>
+    </article>
 {% endfor %}
-</div>
+</section>
