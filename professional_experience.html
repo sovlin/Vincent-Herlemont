@@ -14,30 +14,47 @@ excerpt:
 {% for post in mycategory %}
     <article>
         <header>
-                <h1>
-            <a href="{{post.url | site.baseurl}}">{{ post.title }} &nbsp;{ {{post.time}} }
+            <a href="{{post.url | site.baseurl}}">
+                {{ post.title }}
             </a>
-                </h1>
+        </header>
+
+
+        <div class="text article-tag big-padding-top">
+            <ul>
+                {% for subtags in post.tags %}
+                <li>{{subtags}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+
+        <div class="text big-padding-top">
+            <ul>
+                <li>
+                    <a class="disabled companybutton waves-effect btn-flat"><i class="mdi-communication-business"></i>{{post.company}}</a> 
+                </li>
+                <li>
+                    {{post.role}}
+                </li>
+                <li>
                     {% for subcategory in post.categories %}
                         {% if subcategory != mycategoryname %}
                             {{subcategory}}
                         {% endif %}
                     {% endfor %}
-            <div>
-                {% for subtags in post.tags %}
-                    <span class="ibadge itags">{{subtags}}</span>
-                {% endfor %}
-            </div>
+                </li>
+                <li>
+                    {{post.time}}
+                </li>
+            </ul>
+        </div>
 
-        </header>
-
-        <p class="section flow-text endp">
+        <div class="text">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-        </p>
+        </div>
+        <div class="stop-left"></div>
 
-        <footer>
-            <a class="disabled companybutton waves-effect btn-flat"><i class="mdi-communication-business"></i> {{post.company}}</a> Role : {{post.role}}
-        </footer>
     </article>
 {% endfor %}
 </section>

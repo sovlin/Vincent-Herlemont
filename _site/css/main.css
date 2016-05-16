@@ -92,8 +92,8 @@ a, li, ul {
     text-align: justify;
 }
 .text ul {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .text ul li {
     font-size: inherit;
@@ -104,11 +104,13 @@ a, li, ul {
     list-style-type: square;
     font-family: 'Quicksand', sans-serif;
 }
+
 .text h1 {
     font-size: 150%;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
+
 .text article header h1 a {
     font-weight: normal;
 }
@@ -129,8 +131,8 @@ a, li, ul {
 .big-download div {
     margin: auto;
     width:100px;
-    background-color: #333333;
     padding: 20px;
+    background-color: #333333;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
@@ -149,3 +151,32 @@ a, li, ul {
     width: 50px;
 }
 
+article header a {
+    padding: 15px;
+    color: white;
+    background-color: #333333;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.article-tag {
+    float: left;
+    padding-left: 40px;
+    width: 30%;
+}
+.article-tag + .text {
+    margin-left: 40%;
+}
+
+.stop-left {
+    clear: left;
+}
+
+article {
+     margin-bottom: 70px;
+}
+
+.big-padding-top {
+    padding-top: 40px;
+}
