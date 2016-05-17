@@ -10,27 +10,46 @@ excerpt:
 ---
 {% assign mycategoryname = 'projects' %}
 {% assign mycategory = site.categories.projects %}
-<div class="container">
+<div class="text">
     {% for post in mycategory %}
-    <div class="divider"></div>
-    <div>
-        <h5>
-            <a href="{{post.url | site.baseurl}}">{{ post.title }} { {{ post.date | date: "%Y" }} }</a>
-        </h5>
-        <div>
-            {% for subtags in post.tags %}
-            <span class="ibadge itags">{{subtags}}</span>
-            {% endfor %}
+    <article>
+
+        <header>
+            <a href="{{post.url | site.baseurl}}">
+                {{ post.title }}
+            </a>
+        </header>
+
+        <div class="text article-tag big-padding-top">
+            <ul>
+                {% for subtags in post.tags %}
+                <li>{{subtags}}</li>
+                {% endfor %}
+            </ul>
         </div>
-        <p class="section flow-text firstp endp">
-            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-        </p>
-        {% for subcategory in post.categories %}
-        {% if subcategory != mycategoryname %}
-        <a class="disabled companybutton waves-effect btn-flat"><i class="mdi-communication-business"></i> {{subcategory}}</a>
-        {% endif %}
-        {% endfor %}
-        Role : {{post.role}}
-    </div>
+
+        <div class="text big-padding-top">
+            <ul>
+                <li>
+                    {% for subcategory in post.categories %}
+                        {% if subcategory != mycategoryname %}
+                            {{subcategory}}
+                        {% endif %}
+                    {% endfor %}
+                </li>
+                <li>
+                    {{ post.date | date: "%Y" }}
+                </li>
+            </ul>
+        </div>
+
+        <div class="text">
+            <p>
+                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+            </p>
+        </div>
+        <div class="stop-left"></div>
+
+    </article>
     {% endfor %}
 </div>
