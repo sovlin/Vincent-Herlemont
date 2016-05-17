@@ -10,6 +10,10 @@ a, li, ul {
     list-style-type: none;
 }
 
+img {
+    max-width: 50vw;
+}
+
 .menu * {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
